@@ -587,6 +587,10 @@ video {
   background-image: url('*/src/image/background.png');
 }
 
+.bg-\[url\(\'\/dist\/image\/background\.png\'\)\] {
+  background-image: url('*/dist/image/background.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
