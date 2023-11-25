@@ -5,9 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="dist/output.css" rel="stylesheet" />
   </head>
-  <body
-    class="bg-[url('../src/image/background.png')] bg-cover p-10 ease-in duration-150">
-    <div id="pages">
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Exo:100);
+    /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+    /* Animations */
+    @-webkit-keyframes bg-scrolling-reverse {
+      100% {
+        background-position: 50px 50px;
+      }
+    }
+    @-moz-keyframes bg-scrolling-reverse {
+      100% {
+        background-position: 50px 50px;
+      }
+    }
+    @-o-keyframes bg-scrolling-reverse {
+      100% {
+        background-position: 50px 50px;
+      }
+    }
+    @keyframes bg-scrolling-reverse {
+      100% {
+        background-position: 50px 50px;
+      }
+    }
+    @-webkit-keyframes bg-scrolling {
+      0% {
+        background-position: 50px 50px;
+      }
+    }
+    @-moz-keyframes bg-scrolling {
+      0% {
+        background-position: 50px 50px;
+      }
+    }
+    @-o-keyframes bg-scrolling {
+      0% {
+        background-position: 50px 50px;
+      }
+    }
+    @keyframes bg-scrolling {
+      0% {
+        background-position: 50px 50px;
+      }
+    }
+    /* Main styles */
+    body {
+      font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+      text-align: center;
+      /* img size is 50x50 */
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+        repeat 0 0;
+      -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+      /* Safari 4+ */
+      -moz-animation: bg-scrolling-reverse 0.92s infinite;
+      /* Fx 5+ */
+      -o-animation: bg-scrolling-reverse 0.92s infinite;
+      /* Opera 12+ */
+      animation: bg-scrolling-reverse 0.92s infinite;
+      /* IE 10+ */
+      -webkit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      animation-timing-function: linear;
+    }
+    body::before {
+      font-size: 8rem;
+      font-weight: 100;
+      font-style: normal;
+    }
+  </style>
+
+  
+  <body class="p-10 ease-in duration-150">
+    <section id="pages">
       <!--Main.js-->
       <div class="text-center flex justify-center">
         <ul>
@@ -44,8 +116,8 @@
           <li class="hover:text-red-700">TEXTILE INNOATION</li>
         </ul>
       </div>
-    </div>
-    <div>
+    </section>
+    <section>
       <footer class="justify-center text-center">
         <div class="flex justify-center">
           <ul class="text-center sm:text-4xl text-base translate-y-60">
@@ -63,9 +135,7 @@
               target="_blank"
               ><i class="fa-brands fa-linkedin" style="color: #000000"></i
             ></a>
-            <a
-              href="https://www.youtube.com/watch?v=gHmNv5bcna8"
-              target="_blank"
+            <a href="https://www.youtube.com/@graceperrone2771" target="_blank"
               ><i class="fa-brands fa-youtube" style="color: #000000"></i
             ></a>
           </ul>
@@ -74,7 +144,7 @@
           <img class="w-[150vh] h-[50vh]" src="src/image/footer.png" alt="" />
         </div>
       </footer>
-    </div>
+    </section>
     <script type="text/javascript" src="src/main.js"></script>
     <script
       src="https://kit.fontawesome.com/341994b7aa.js"

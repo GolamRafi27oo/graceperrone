@@ -3,7 +3,7 @@ let loren = document.getElementById("loren");
 
 loren.addEventListener("click", function () {
     page.innerHTML = `
-    <div class="ease-in duration-150">
+  <section class="ease-in duration-150">
     <h1 class="text-4xl font-bold">LOREM IPSUM:</h1>
     <h1 class="text-2xl font-bold pt-2">
       UNVEILING THE HYPERREAL SIMULACRA
@@ -20,8 +20,8 @@ loren.addEventListener("click", function () {
       class="mt-4 p-2 bg-black text-white rounded-md hover:bg-red-700 ease-in duration-150">
       CLICK TO SEE CONCEPT AND PROCESS
     </button>
-  </div>
-  <div class="mt-10">
+  </section>
+  <section class="mt-10">
     <div
       class="grid gap-4 md:grid-cols-4 sm:grid-cols-2 bg-black p-10 rounded-lg shadow-2xl">
       <img
@@ -65,9 +65,9 @@ loren.addEventListener("click", function () {
         src="src/image/loremimage/tattoo wrap-Recovered_2080983 2.webp"
         alt="" />
     </div>
-  </div>
+  </section>
 
-  <div class="mt-40">
+  <section class="mt-40">
     <h1 class="text-4xl font-bold text-center">FURTHER</h1>
     <p class="text-base pt-2 font-semibold mt-10">
       CORE TO "LOREM IPSUM” IS AN INVESTIGATION OF HYPERREALITY AND
@@ -103,8 +103,8 @@ loren.addEventListener("click", function () {
       THE PAIN ITSELF, INNATE TO THE NETWORKED SELF, TO ORGANIC BEINGS
       EXISTING IN A POST-DIGITAL WORLD.
     </p>
-  </div>
-  <div>
+  </section>
+  <section>
     <div class="flex justify-center">
       <img src="src/image/Layer 93 3.webp" alt="" />
     </div>
@@ -135,6 +135,6 @@ loren.addEventListener("click", function () {
           alt="" />
       </div>
     </div>
-  </div>
+  </section>
     `;
   });
