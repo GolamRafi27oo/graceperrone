@@ -26,7 +26,7 @@ loren.addEventListener("click", function () {
       class="grid gap-4 md:grid-cols-4 sm:grid-cols-2 bg-black p-10 rounded-lg shadow-2xl">
       <img
         class="rounded-lg"
-        src="src/image/loremimage/_cyborg look 2.webp"
+        src="src/image/loremimage/cyborg look 2.webp"
         alt="" />
       <img
         class="rounded-lg"
@@ -115,7 +115,7 @@ loren.addEventListener("click", function () {
         class="mt-10 grid gap-4 md:grid-cols-3 sm:grid-cols-2 bg-black rounded-lg p-10 shadow-2xl">
         <img
           class="rounded-lg"
-          src="src/image/loremimage/gallery/_MG_0113 3.webp"
+          src="src/image/loremimage/gallery/MG_0113 3.webp"
           alt="" />
         <img
           class="rounded-lg"
