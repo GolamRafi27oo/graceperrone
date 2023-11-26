@@ -52,6 +52,8 @@
       }
     }
     /* Main styles */
+
+    
     body {
       font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
       text-align: center;
@@ -78,10 +80,9 @@
     }
   </style>
 
-
-  <body class="p-10 ease-in duration-150">
-
-    <nav id="navbar" class="hidden absolute top-2 left-2">
+  <html class="scroll-smooth">
+  <body class="p-10">
+    <nav id="navbar" class="hidden absolute top-2 left-2 ease-in duration-150 z-10">
       <div class="fixed">
         <i class="fa-solid fa-bars cursor-pointer text-2xl text-red-700"></i>
       </div>
@@ -92,7 +93,7 @@
           <li class="hover:text-red-700">ABOUT</li>
           <li id="lorennav" class="hover:text-red-700"><a href="#">LOREM IPSUM SS24</a></li>
           <li id="OROBORUSNAV" class="hover:text-red-700"><a href="#">OROBORUS SS23</a></li>
-          <li class="hover:text-red-700"><a href="#">ILUSTRATION</a></li>
+          <li id="ILLUSTRATIONAV" class="hover:text-red-700"><a href="#">ILUSTRATION</a></li>
           <li class="hover:text-red-700"><a href="#">DIGITAL FASHON</a></li>
           <li class="hover:text-red-700"><a href="#">STYLING</a></li>
           <li class="hover:text-red-700"><a href="#">TEXTILE INNOATION</a></li>
@@ -100,7 +101,7 @@
       </div>
     </nav>
     
-    <section id="pages">
+    <section id="pages" class="ease-in duration-150">
       <!--Main.js-->
       <div class="text-center flex justify-center">
         <ul>
@@ -130,7 +131,7 @@
       </div>
       <div class="pt-10">
         <ul class="sm:text-4xl text-2xl cursor-pointer">
-          <li class="hover:text-red-700">ILUSTRATION</li>
+          <li id="ILLUSTRATION" class="hover:text-red-700">ILUSTRATION</li>
           <li class="hover:text-red-700">GLITCH WORK</li>
           <li class="hover:text-red-700">DIGITAL FASHON</li>
           <li class="hover:text-red-700">STYLING</li>
@@ -139,7 +140,7 @@
       </div>
     </section>
     <section>
-      <footer class="justify-center text-center">
+      <footer class="justify-center text-center cursor-pointer">
         <div class="flex justify-center">
           <ul class="text-center sm:text-4xl text-base translate-y-60">
             <a href="https://sketchfab.com/cybrinx" target="_blank"
@@ -149,15 +150,15 @@
                 alt=""
             /></a>
             <a href="https://www.instagram.com/femmeboyarmy/" target="_blank"
-              ><i class="fa-brands fa-instagram" style="color: #000000"></i
+              ><i class="fa-brands fa-instagram hover:text-[#ee353a]"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/grace-perrone-9a6763218/"
               target="_blank"
-              ><i class="fa-brands fa-linkedin" style="color: #000000"></i
+              ><i class="fa-brands fa-linkedin hover:text-[#0a63bc]"></i
             ></a>
             <a href="https://www.youtube.com/@graceperrone2771" target="_blank"
-              ><i class="fa-brands fa-youtube" style="color: #000000"></i
+              ><i class="fa-brands fa-youtube hover:text-[#f70000]"></i
             ></a>
           </ul>
         </div>
