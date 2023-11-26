@@ -2,25 +2,24 @@ let page = document.getElementById("pages");
 let loren = document.getElementById("loren");
 let navbar = document.getElementById("navbar");
 let lorennav = document.getElementById("lorennav");
+let oroborus = document.getElementById("OROBORUS");
+let oroborusnav = document.getElementById("OROBORUSNAV");
 
-let navfun = function(){
+let navfun = function () {
   navbar.classList.remove("hidden");
   let memu = document.getElementById("menu");
   let count = 0;
-  navbar.addEventListener("click", function(){ 
+  navbar.addEventListener("click", function () {
     count++;
-    if(count%2 != 0){
+    if (count % 2 != 0) {
       memu.classList.remove("hidden");
-    }else{
+    } else {
       memu.classList.add("hidden");
     }
-    
-  })
- 
+  });
 };
 
-
-let lorenfun = function(){
+let lorenfun = function () {
   navfun();
   page.innerHTML = `
   <section>
@@ -255,9 +254,6 @@ let lorenfun = function(){
                 src="src/image/loremimage/concept/Your paragraph text (1).webp"
                 alt="" />
             </div>
-            <li class="translate-y-40 text-4xl text-red-700 p-2 flex">
-              <i class="fa-solid fa-5"></i>
-            </li>
           </section>
         </div>
         <section
@@ -269,23 +265,91 @@ let lorenfun = function(){
               alt="" />
           </div>
           <div>
-            <ul class="flex items-center">
-              <li
-                class="md:text-2xl font-bold md:translate-x-2 md:-translate-y-2 mt-4">
-                LASERCUT PHYSICAL PATTERNS AND CONSTRUCT
-              </li>
-            </ul>
+          <ul class="flex items-center">
+          <li class="text-4xl text-red-700 p-2 flex justify-center">
+            <i class="fa-solid fa-5"></i>
+            </li>
+            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+            LASERCUT PHYSICAL PATTERNS AND CONSTRUCT
+            </li>
+           </ul>
           </div>
         </section>
       </div>
         `;
-
-        
   });
+};
+
+let ourobofun = function(){
+  navfun();
+  page.innerHTML = `
+  <div>
+  <section class="grid md:grid-cols-2 items-center font-semibold">
+    <div class="m-4">
+      <img class="rounded-md" src="src/image/OUROBOROS/oroboruslook1 1.webp" alt="">
+    </div>
+      <div class="text-left">
+        <ul class="list-disc ml-10">
+          <li>Coral Bleaching</li>
+          <li>Corsetry</li>
+          <li>Symbiosis</li>
+          <li>Scaffoiding</li>
+          <li>Shibari</li>
+        </ul>
+        <ul class="ml-5 mt-5">
+          <p>“OUROBOROS EXPRESSES THE UNITY OF ALL THINGS, MATERIAL AND SPIRITUAL, WHICH NEVER DISAPPEARS BUT PERPETUALLY CHANGES FORM IN AN ETERNAL CYCLE OF DESTRUCTION AND RE-CREATION’</p>
+        </ul>
+        <ul class="flex justify-center">
+          <img src="src/image/Layer 93 3.webp" alt="">
+        </ul>
+      </div>
+  </section>
+  <section class="grid md:grid-cols-2 items-center font-semibold p-10 shadow-2xl rounded-lg">
+    <div class="m-4 shadow-2xl">
+      <img class="rounded-md" src="src/image/OUROBOROS/IMG_4748 (3) 1.webp" alt="">
+    </div>
+    <div>
+      <img class="rounded-md" src="src/image/OUROBOROS/IMG_4747 1.webp" alt="">
+    </div>
+    <div class="shadow-2xl">
+      <img class="rounded-md" src="src/image/OUROBOROS/IMG_4897 1.webp" alt="">
+    </div>
+    <div class="m-4">
+      <img class="rounded-md" src="src/image/OUROBOROS/display_img2.webp" alt="">
+      <p class="p-2">Zooxanthellae Is The Microscopic Algae Which Pigments Coral, The Two Organisms Are Reliant On Each Other For Survival. Because The Algae Does Not Have The Capacity To Handle Large Fluctuations In Temperature, The Organism Dies Stripping The Coral Of Its Colour. This Effect Is Called Coral Bleaching, A Name That Implies The Sterilisation Of Nature.</p>
+    </div>
+    <div class="shadow-2xl">
+      <img class="rounded-md" src="src/image/OUROBOROS/IMG_9709.webp" alt="">
+    </div>
+    <div>
+      <img src="src/image/OUROBOROS/Layer 1.webp" alt="">
+    </div>
+    <div class="grid grid-cols-2 mt-10">
+      <img class="p-2" src="src/image/OUROBOROS/IMG_6579 1.webp" alt="">
+      <img src="src/image/OUROBOROS/04D68C2C-4407-4241-B246-51331D1E8499 1.webp" alt="">
+      <img class="p-2" src="src/image/OUROBOROS/IMG_6580 1.webp" alt="">
+      <img src="src/image/OUROBOROS/EB3C947E-4EDA-4CD4-AF5D-E8C74EBB14DE 1.webp" alt="">
+    </div>
+    <div class="m-6 translate-y-5 shadow-2xl">
+      <img class="rounded-md" src="src/image/OUROBOROS/FD4D9F47-4A27-455E-959F-AEE33FFF1C2C 1.webp" alt="">
+    </div>
+
+    <div class="mt-56">
+      <img src="src/image/OUROBOROS/20220511-_DSC4633 1.webp" alt="">
+    </div>
+    <div>
+      <img src="src/image/OUROBOROS/IMG_6581 1.webp" alt="">
+    </div>
+    <div>
+      <img src="src/image/OUROBOROS/IMG_6582 1.webp" alt="">
+    </div>
+    <div class="-translate-y-56">
+      <img src="src/image/OUROBOROS/IMG_6583 1.webp" alt="">
+    </div>
+  </section>
+</div>
+  `
 }
-
-
-
 
 loren.addEventListener("click", function () {
   lorenfun();
@@ -293,3 +357,11 @@ loren.addEventListener("click", function () {
 lorennav.addEventListener("click", function () {
   lorenfun();
 });
+
+oroborus.addEventListener("click", function () {
+  ourobofun();
+});
+oroborusnav.addEventListener("click", function () {
+  ourobofun();
+});
+
