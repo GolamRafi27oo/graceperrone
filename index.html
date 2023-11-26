@@ -7,76 +7,12 @@
   </head>
 
   <style>
-    /*thank to Twitter: @kootoopas for the background animation*/
-    @import url(https://fonts.googleapis.com/css?family=Exo:100);
-    /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-    /* Animations */
-    @-webkit-keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @-moz-keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @-o-keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @-webkit-keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    @-moz-keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    @-o-keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    @keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    /* Main styles */
 
-    
     body {
+
       font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
-      text-align: center;
-      /* img size is 50x50 */
-      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+      background: url("/src/image/background.png")
         repeat 0 0;
-      -webkit-animation: bg-scrolling-reverse 0.92s infinite;
-      /* Safari 4+ */
-      -moz-animation: bg-scrolling-reverse 0.92s infinite;
-      /* Fx 5+ */
-      -o-animation: bg-scrolling-reverse 0.92s infinite;
-      /* Opera 12+ */
-      animation: bg-scrolling-reverse 0.92s infinite;
-      /* IE 10+ */
-      -webkit-animation-timing-function: linear;
-      -moz-animation-timing-function: linear;
-      -o-animation-timing-function: linear;
-      animation-timing-function: linear;
-    }
-    body::before {
-      font-size: 8rem;
-      font-weight: 100;
-      font-style: normal;
     }
   </style>
 
@@ -100,73 +36,64 @@
         </ul>
       </div>
     </nav>
-    
-    <section id="pages" class="ease-in duration-150">
+    <section id="pages" class="ease-in duration-150 ">
       <!--Main.js-->
-      <div class="text-center flex justify-center">
+      <div class="text-center mt-5">
+        <div class="flex justify-center">
+          <img class="max-md:w-[20vh] absolute" src="src/image/CROWN HEADER.png" alt="">
+        </div>
+        <div>
+          <h1 class="font-primary uppercase mt-32 cursor-pointer relative z-10 text-2xl">Grace Perrone</h1>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-center">
+          <img class="max-md:w-[60vh] absolute top-10" src="src/image/HEADER (AROUND NAME).png" alt="">
+        </div>
+        <div class="flex justify-center -inset-10">
+          <img class="md:w-[236px] w-[100px] absolute top-38" src="src/image/homegif.gif" alt="">
+        </div>
+      </div>
+      <div class="items-center grid grid-cols-3 uppercase font-primary mt-36 pt-2 justify-center text-center text-base md:mr-[20%] mr-[0%] md:ml-[20%] ml-[0%]">
+        <div>
+          <h1 id="loren" class="text-2xl cursor-pointer relative z-10 mr-9 border-dashed hover:border-black border-2">lorem ipsum ss24</h1>
+        </div>
+        <div class="flex justify-center">
+          <img src="src/image/Ellipse 3 1.webp" alt="">
+        </div>
+        <div>
+          <h1 id="OROBORUS" class="text-2xl cursor-pointer relative z-10 ml-8 border-dashed hover:border-black border-2">oroborus ss23</h1>
+        </div>
+      </div>
+      <div class="font-primary uppercase cursor-pointer grid md:ml-[30vh] text-2xl mt-10">
+        <ul class="flex space-x-3">
+          <li id="ILLUSTRATION" class="hover:border-black border-2 border-dashed">ILLUSTRATION</li>
+          <li class="hover:border-black border-2 border-dashed">GLITCH WORK</li>
+        </ul>
+        <ul class="flex space-x-3">
+          <li class="hover:border-black border-2 border-dashed">digital Fasion</li>
+          <li class="hover:border-black border-2 border-dashed">styling</li>
+        </ul>
         <ul>
-          <li class="text-2xl font-bold cursor-pointer hover:text-red-700">
-            GRACE PERRONE
-          </li>
-          <li class="justify-center flex">
-            <img class="h-[20vh]" src="src/image/homegif.gif" alt="" />
-          </li>
-        </ul>
-      </div>
-      <div class="pt-10 justify-center flex">
-        <ul class="flex sm:text-base text-xs font-semibold">
-          <li id="loren" class="pt-10 cursor-pointer hover:text-red-700 p-2">
-            LOREM IPSUM SS24
-          </li>
-          <li>
-            <img
-              class="sm:h-[50vh] h-[0vh]"
-              src="src/image/Ellipse 3 1.webp"
-              alt="" />
-          </li>
-          <li id="OROBORUS" class="pt-10 cursor-pointer hover:text-red-700 p-2">
-            OROBORUS SS23
-          </li>
-        </ul>
-      </div>
-      <div class="pt-10">
-        <ul class="sm:text-4xl text-2xl cursor-pointer">
-          <li id="ILLUSTRATION" class="hover:text-red-700">ILUSTRATION</li>
-          <li class="hover:text-red-700">GLITCH WORK</li>
-          <li class="hover:text-red-700">DIGITAL FASHON</li>
-          <li class="hover:text-red-700">STYLING</li>
-          <li class="hover:text-red-700">TEXTILE INNOATION</li>
+          <li class="hover:border-black border-2 border-dashed w-[32vh]">textile Innovation</li>
         </ul>
       </div>
     </section>
-    <section>
-      <footer class="justify-center text-center cursor-pointer">
-        <div class="flex justify-center">
-          <ul class="text-center sm:text-4xl text-base translate-y-60">
-            <a href="https://sketchfab.com/cybrinx" target="_blank"
-              ><img
-                class="fa-brands sm:w-9 w-5 sm:pb-2 pb-1"
-                src="src/image/sketchfab.png"
-                alt=""
-            /></a>
-            <a href="https://www.instagram.com/femmeboyarmy/" target="_blank"
-              ><i class="fa-brands fa-instagram hover:text-[#ee353a]"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/grace-perrone-9a6763218/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin hover:text-[#0a63bc]"></i
-            ></a>
-            <a href="https://www.youtube.com/@graceperrone2771" target="_blank"
-              ><i class="fa-brands fa-youtube hover:text-[#f70000]"></i
-            ></a>
+    <footer class="mt-40">
+      <div>
+        <div>
+          <ul class="flex justify-center space-x-4 translate-y-64">
+            <a href=""><img class="w-8" src="src/image/footer/sketchfablogo.webp" alt=""></a>
+            <a href=""><img class="w-8" src="src/image/footer/instagram.webp" alt=""></a>
+            <a href=""><img class="w-8" src="src/image/footer/linked.webp" alt=""></a>
+            <a href=""><img class="w-8" src="src/image/footer/youtubelogo.webp" alt=""></a>
           </ul>
         </div>
         <div class="flex justify-center">
-          <img class="w-[150vh] h-[50vh]" src="src/image/footer.png" alt="" />
+          <img src="src/image/footer.png" alt="">
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
     <script type="text/javascript" src="src/main.js"></script>
     <script
       src="https://kit.fontawesome.com/341994b7aa.js"

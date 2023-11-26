@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: grunge;
+    src: url("../src/font/Retro\ Grunge\ West.otf") format("opentype");
+  }

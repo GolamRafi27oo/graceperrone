@@ -7,69 +7,13 @@
   </head>
 
   <style>
-    /*thank to Twitter: @kootoopas for the background animation*/
     @import url(https://fonts.googleapis.com/css?family=Exo:100);
-    /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-    /* Animations */
-    @-webkit-keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @-moz-keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @-o-keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @keyframes bg-scrolling-reverse {
-      100% {
-        background-position: 50px 50px;
-      }
-    }
-    @-webkit-keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    @-moz-keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    @-o-keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    @keyframes bg-scrolling {
-      0% {
-        background-position: 50px 50px;
-      }
-    }
-    /* Main styles */
     body {
       font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
       text-align: center;
       /* img size is 50x50 */
-      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+      background: url("/src/image/background.png")
         repeat 0 0;
-      -webkit-animation: bg-scrolling-reverse 0.92s infinite;
-      /* Safari 4+ */
-      -moz-animation: bg-scrolling-reverse 0.92s infinite;
-      /* Fx 5+ */
-      -o-animation: bg-scrolling-reverse 0.92s infinite;
-      /* Opera 12+ */
-      animation: bg-scrolling-reverse 0.92s infinite;
-      /* IE 10+ */
-      -webkit-animation-timing-function: linear;
-      -moz-animation-timing-function: linear;
-      -o-animation-timing-function: linear;
-      animation-timing-function: linear;
     }
     body::before {
       font-size: 8rem;
@@ -78,94 +22,101 @@
     }
   </style>
 
-
-  <body class="p-10 ease-in duration-150">
-
-    <nav id="navbar" class="hidden absolute top-1">
-      <div>
-        <i class=" fa-solid fa-bars cursor-pointer text-2xl"></i>
+  <html class="scroll-smooth">
+  <body class="p-10">
+    <nav id="navbar" class="hidden absolute top-2 left-2 ease-in duration-150 z-10">
+      <div class="fixed">
+        <i class="fa-solid fa-bars cursor-pointer text-2xl text-red-700"></i>
       </div>
-      <div id="menu" class="hidden absolute w-48 bg-white p-4 shadow-2xl rounded-md">
+      <div id="menu" class="hidden fixed w-48 bg-white p-4 shadow-2xl rounded-md translate-y-10">
         <img class="flex justify-center items-center" src="src/image/homegif.gif" alt="">
         <ul class="space-y-2 cursor-pointer font-semibold">
           <li class="hover:text-red-700"><a href="index.html">HOME</a></li>
           <li class="hover:text-red-700">ABOUT</li>
-          <li id="lorennav" class="hover:text-red-700">LOREM IPSUM SS24</li>
-          <li class="hover:text-red-700">OROBORUS SS23</li>
-          <li class="hover:text-red-700">ILUSTRATION</li>
-          <li class="hover:text-red-700">DIGITAL FASHON</li>
-          <li class="hover:text-red-700">STYLING</li>
-          <li class="hover:text-red-700">TEXTILE INNOATION</li>
+          <li id="lorennav" class="hover:text-red-700"><a href="#">LOREM IPSUM SS24</a></li>
+          <li id="OROBORUSNAV" class="hover:text-red-700"><a href="#">OROBORUS SS23</a></li>
+          <li id="ILLUSTRATIONAV" class="hover:text-red-700"><a href="#">ILUSTRATION</a></li>
+          <li class="hover:text-red-700"><a href="#">DIGITAL FASHON</a></li>
+          <li class="hover:text-red-700"><a href="#">STYLING</a></li>
+          <li class="hover:text-red-700"><a href="#">TEXTILE INNOATION</a></li>
         </ul>
       </div>
     </nav>
     
-    <section id="pages">
+    <section id="pages" class="ease-in duration-150">
+      <!--Main.js-->
       <div>
-        <div class="text-center">
-          <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
-          <div class="flex justify-center mt-20">
-            <div class="sm:w-80 sm:h-80  bg-red-700 rounded-full"></div>
+        <section class="grid md:grid-cols-2 items-center font-semibold">
+          <div class="m-4 flex justify-center">
+            <img class="rounded-md h-[80vh]" src="src/image/OUROBOROS/oroboruslook1 1.webp" alt="">
           </div>
-          <div class="flex justify-center ">
-            <img class="flex justify-center w-60 sm:-translate-y-56" src="src/image/ILLUSTRATION/drawing 1.webp" alt="">
+            <div class="text-left">
+              <ul class="list-disc ml-10">
+                <li>Coral Bleaching</li>
+                <li>Corsetry</li>
+                <li>Symbiosis</li>
+                <li>Scaffoiding</li>
+                <li>Shibari</li>
+              </ul>
+              <ul class="ml-5 mt-5">
+                <p>“OUROBOROS EXPRESSES THE UNITY OF ALL THINGS, MATERIAL AND SPIRITUAL, WHICH NEVER DISAPPEARS BUT PERPETUALLY CHANGES FORM IN AN ETERNAL CYCLE OF DESTRUCTION AND RE-CREATION’</p>
+              </ul>
+              <ul class="flex justify-center">
+                <img src="src/image/Layer 93 3.webp" alt="">
+              </ul>
+            </div>
+        </section>
+        <section class="grid md:grid-cols-3 items-center font-semibold p-10 shadow-2xl rounded-lg">
+          <div class="m-4 flex justify-center">
+            <img class="rounded-md h-[70vh]" src="src/image/OUROBOROS/IMG_4748 (3) 1.webp" alt="">
           </div>
-        </div>
-        <div class="grid md:grid-cols-2 mt-10">
-          <div class="text-left relative z-20">
-            <h1 class="md:text-4xl text-2xl font-bold">POST-HUMAN WORLD BUILDING</h1>
-            <p class="mt-4 font-semibold">MY WORK IS BORN OUT OF AN IMAGINED POST-HUMAN WORLD WHICH CONSIDERS THE CLASHES, TENSIONS, AND CONSEQUENCES, OF LIVING IN AN AGE WHERE THE DISTINCTION BETWEEN THE REAL AND THE DIGITAL, THE ORIGINAL AND ITS REPRODUCTIONS, IS BECOMING EVERMORE UNCLEAR. ESSENTIAL POST-HUMAN QUESTIONS INCLUDE CONSIDERATIONS OF WHERE OUR BODIES STOP GIVEN OUR EVER-DEPENDANT RELATIONSHIP WITH TECHNOLOGY, AND IMAGINING A SCENARIO AND CREATING FOR THAT.  I CONSIDER THE ROLES, HUMAN OR AUTOMATED, PEOPLE IN THE FUTURE MAY TAKE. FOR EXAMPLE, IF SOMEONE IS A NOMAD WHAT TOOLS WOULD THEY NEED, AND HOW WOULD THEY MAKE USE OF THE RESOURCES WOULD THEY HAVE?</p>
+          <div class="m-4 flex justify-center">
+            <img class="rounded-md h-[70vh]" src="src/image/OUROBOROS/IMG_4747 1.webp" alt="">
           </div>
-          <div class="flex items-center absolute translate-y-40 ">
-            <img src="src/image/ILLUSTRATION/cool asset 1.webp" alt="">
+          <div class="m-4 flex justify-center">
+            <img class="rounded-md h-[70vh]" src="src/image/OUROBOROS/IMG_4897 1.webp" alt="">
           </div>
-        </div>
-        <div>
-          <div class="grid sm:grid-cols-3 sm:mt-40 mt-20 relative z-30 p-5 justify-center">
-            <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-              <img class="h-80" src="src/image/ILLUSTRATION/scan_s1975580_2023-08-06-00-03-18 3 1.webp" alt="">
-            </div>
-            <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-              <img class="h-80" src="src/image/ILLUSTRATION/scan_s1975580_2023-08-06-00-03-18 4 1.webp" alt="">
-  
-            </div>
-            <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-              <img class="h-80" src="src/image/ILLUSTRATION/scan_s1975580_2023-08-06-00-03-18 5 1.webp" alt="">
-  
-            </div>
-            <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-              <img class="h-80 " src="src/image/ILLUSTRATION/cyborgprincesschimera 1.webp" alt="">
-            </div>
-            <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-              <img class="h-80" src="src/image/ILLUSTRATION/hatguy 2.webp" alt="">
-            </div>
-          </div>
-          <div class="mt-40 md:text-4xl text-2xl font-bold">
-            <h1>CYBORG ILLUSTRATION</h1>
-            <div class="grid sm:grid-cols-2">
-              <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-                <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-09-07 at 16.30 1.webp" alt="">
-              </div>
-              <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-                <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-09-18 at 19.13 1.webp" alt="">
-              </div>
-              <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-                <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-09-20 at 17.00 1.webp" alt="">
-              </div>
-              <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-                <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-10-17 at 19.00 1.webp" alt="">
-              </div>
-              <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-                <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/thumbnail_Screenshot 2023-09-15 at 21.03 1.webp" alt="">
-              </div>
-            </div>
-  
-        </div>
-      </div>
+          <div class="m-4 md:text-left text-center">
+            <div class="flex justify-center">
+              <img class="w-[50vh] rounded-md h-[30vh]" src="src/image/OUROBOROS/display_img2.webp" alt="">
 
-    </section>
+            </div>
+            <p class="p-2">Zooxanthellae Is The Microscopic Algae Which Pigments Coral, The Two Organisms Are Reliant On Each Other For Survival. Because The Algae Does Not Have The Capacity To Handle Large Fluctuations In Temperature, The Organism Dies Stripping The Coral Of Its Colour. This Effect Is Called Coral Bleaching, A Name That Implies The Sterilisation Of Nature.</p>
+          </div>
+          <div class="m-4 flex justify-center">
+            <img class="rounded-md h-[70vh] w-[60vh" src="src/image/OUROBOROS/IMG_9709.webp" alt="">
+          </div>
+          <div class="m-4 flex justify-center">
+            <img class="rounded-md h-[70vh] w-[60vh]" src="src/image/OUROBOROS/Layer 1.webp" alt="">
+          </div>
+          <div class="m-4 flex justify-center">
+            <div class="grid md:grid-cols-2 grid-cols-4">
+              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/IMG_6579 1.webp" alt="">
+              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/04D68C2C-4407-4241-B246-51331D1E8499 1.webp" alt="">
+              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/IMG_6580 1.webp" alt="">
+              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/EB3C947E-4EDA-4CD4-AF5D-E8C74EBB14DE 1.webp" alt="">
+            </div>          
+          </div>
+
+          <div class="m-4 flex justify-center">
+            <img class="rounded-md h-[40vh]" src="src/image/OUROBOROS/FD4D9F47-4A27-455E-959F-AEE33FFF1C2C 1.webp" alt="">
+          </div>
+          <div class="m-4 flex justify-center">
+            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/20220511-_DSC4633 1.webp" alt="">
+          </div>
+          <div class="m-4 flex justify-center">
+            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/IMG_6581 1.webp" alt="">
+          </div>
+          <div class="m-4 flex justify-center">
+            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/IMG_6582 1.webp" alt="">
+          </div>
+          <div class="m-4 flex justify-center">
+            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/IMG_6583 1.webp" alt="">
+          </div>
+        </section>
+      </div>
     <section>
-      <footer class="justify-center text-center">
+      <footer class="justify-center text-center cursor-pointer">
         <div class="flex justify-center">
           <ul class="text-center sm:text-4xl text-base translate-y-60">
             <a href="https://sketchfab.com/cybrinx" target="_blank"
@@ -175,15 +126,15 @@
                 alt=""
             /></a>
             <a href="https://www.instagram.com/femmeboyarmy/" target="_blank"
-              ><i class="fa-brands fa-instagram" style="color: #000000"></i
+              ><i class="fa-brands fa-instagram hover:text-[#ee353a]"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/grace-perrone-9a6763218/"
               target="_blank"
-              ><i class="fa-brands fa-linkedin" style="color: #000000"></i
+              ><i class="fa-brands fa-linkedin hover:text-[#0a63bc]"></i
             ></a>
             <a href="https://www.youtube.com/@graceperrone2771" target="_blank"
-              ><i class="fa-brands fa-youtube" style="color: #000000"></i
+              ><i class="fa-brands fa-youtube hover:text-[#f70000]"></i
             ></a>
           </ul>
         </div>
