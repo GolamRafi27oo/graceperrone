@@ -7,6 +7,7 @@
   </head>
 
   <style>
+    /*thank to Twitter: @kootoopas for the background animation*/
     @import url(https://fonts.googleapis.com/css?family=Exo:100);
     /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
     /* Animations */
@@ -77,8 +78,28 @@
     }
   </style>
 
-  
+
   <body class="p-10 ease-in duration-150">
+
+    <nav id="navbar" class="hidden absolute">
+      <div>
+        <i class=" fa-solid fa-bars cursor-pointer text-2xl"></i>
+      </div>
+      <div id="menu" class="hidden absolute w-48 bg-white p-4 shadow-2xl rounded-md">
+        <img class="flex justify-center items-center" src="src/image/homegif.gif" alt="">
+        <ul class="space-y-2 cursor-pointer font-semibold">
+          <li class="hover:text-red-700"><a href="index.html">HOME</a></li>
+          <li class="hover:text-red-700">ABOUT</li>
+          <li id="lorennav" class="hover:text-red-700">LOREM IPSUM SS24</li>
+          <li class="hover:text-red-700">OROBORUS SS23</li>
+          <li class="hover:text-red-700">ILUSTRATION</li>
+          <li class="hover:text-red-700">DIGITAL FASHON</li>
+          <li class="hover:text-red-700">STYLING</li>
+          <li class="hover:text-red-700">TEXTILE INNOATION</li>
+        </ul>
+      </div>
+    </nav>
+    
     <section id="pages">
       <!--Main.js-->
       <div class="text-center flex justify-center">

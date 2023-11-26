@@ -1,9 +1,29 @@
 let page = document.getElementById("pages");
 let loren = document.getElementById("loren");
+let navbar = document.getElementById("navbar");
+let lorennav = document.getElementById("lorennav");
 
-loren.addEventListener("click", function () {
-    page.innerHTML = `
-  <section class="ease-in duration-150">
+let navfun = function(){
+  navbar.classList.remove("hidden");
+  let memu = document.getElementById("menu");
+  let count = 0;
+  navbar.addEventListener("click", function(){ 
+    count++;
+    if(count%2 != 0){
+      memu.classList.remove("hidden");
+    }else{
+      memu.classList.add("hidden");
+    }
+    
+  })
+ 
+};
+
+
+let lorenfun = function(){
+  navfun();
+  page.innerHTML = `
+  <section>
     <h1 class="text-4xl font-bold">LOREM IPSUM:</h1>
     <h1 class="text-2xl font-bold pt-2">
       UNVEILING THE HYPERREAL SIMULACRA
@@ -16,7 +36,7 @@ loren.addEventListener("click", function () {
       EXPLORES THE PROFOUND IMPACT OF AI PROCESSING ON THE HUMAN EXPERIENCE;
       AND THE DENATURING EFFECT OF RELENTLESS REPRODUCTION.
     </p>
-    <button
+    <button id ="concept"
       class="mt-4 p-2 bg-black text-white rounded-md hover:bg-red-700 ease-in duration-150">
       CLICK TO SEE CONCEPT AND PROCESS
     </button>
@@ -137,4 +157,139 @@ loren.addEventListener("click", function () {
     </div>
   </section>
     `;
+  let concept = document.getElementById("concept");
+  concept.addEventListener("click", function () {
+    page.innerHTML = `
+      <div>
+        <h1 class="md:text-4xl text-2xl font-bold">CONCEPT</h1>
+        <h1 class="md:text-2xl font-bold pt-2">LOREM IPSUM:</h1>
+        <div class="bg-black p-10 mt-4 rounded-lg">
+          <img
+            class="rounded-sm"
+            src="src/image/loremimage/concept/emphasises the Dysphoria.png"
+            alt="" />
+        </div>
+
+        <div class="p-2 border-l-black border-l-4 mt-10">
+          <section class="grid md:grid-cols-2 grid-cols-1">
+            <div>
+              <ul class="flex items-center">
+                <li class="text-4xl text-red-700 p-2 flex justify-center">
+                  <i class="fa-solid fa-1"></i>
+                </li>
+                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+                  FIND A CURATED IDENTITY
+                </li>
+              </ul>
+              <img
+                class="bg-black p-10 rounded-md"
+                src="src/image/loremimage/concept/IMG_5899 1.webp"
+                alt="" />
+            </div>
+
+            <div
+              class="md:ml-10 border-red-700 border-4 p-4 flex items-center md:mt-0 mt-5">
+              <div>
+                <h1 class="md:text-4xl text-2xl font-bold">
+                  CAN I TAKE YOUR PICTURE?
+                </h1>
+                <h1 class="md:text-2xl">
+                  HOW TO MAKE A COLLECTION ABOUT INTERNET DYSPHORIA
+                </h1>
+              </div>
+            </div>
+          </section>
+          <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
+            <div>
+              <ul class="flex items-center">
+                <li class="text-4xl text-red-700 p-2 flex justify-center">
+                  <i class="fa-solid fa-2"></i>
+                </li>
+                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+                  ORDER PHYSICAL SAMPLE DISTORT
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img
+                class="bg-black p-10 rounded-md"
+                src="src/image/loremimage/concept/page from page.webp"
+                alt="" />
+            </div>
+          </section>
+
+          <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
+            <div>
+              <ul class="flex items-center">
+                <li class="text-4xl text-red-700 p-2 flex justify-center">
+                  <i class="fa-solid fa-3"></i>
+                </li>
+                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+                  CONSTRUCT DIGITAL TWIN
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img
+                class="bg-black p-10 rounded-md"
+                src="src/image/loremimage/concept/7DAE3680.webp"
+                alt="" />
+            </div>
+          </section>
+
+          <section
+            class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center mb-40">
+            <div>
+              <ul class="flex items-center">
+                <li class="text-4xl text-red-700 p-2 flex justify-center">
+                  <i class="fa-solid fa-4"></i>
+                </li>
+                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+                  ARRANGE DIGITAL PATTERNS ON LASERCUT BED SIZED PANELS
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img
+                class="bg-black p-10 rounded-md"
+                src="src/image/loremimage/concept/Your paragraph text (1).webp"
+                alt="" />
+            </div>
+            <li class="translate-y-40 text-4xl text-red-700 p-2 flex">
+              <i class="fa-solid fa-5"></i>
+            </li>
+          </section>
+        </div>
+        <section
+          class="grid md:grid-cols-2 grid-cols-1 items-center mb-40 -translate-y-2">
+          <div>
+            <img
+              class="bg-black p-10 rounded-md"
+              src="src/image/loremimage/concept/MG_0107 2.webp"
+              alt="" />
+          </div>
+          <div>
+            <ul class="flex items-center">
+              <li
+                class="md:text-2xl font-bold md:translate-x-2 md:-translate-y-2 mt-4">
+                LASERCUT PHYSICAL PATTERNS AND CONSTRUCT
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+        `;
+
+        
   });
+}
+
+
+
+
+loren.addEventListener("click", function () {
+  lorenfun();
+});
+lorennav.addEventListener("click", function () {
+  lorenfun();
+});
