@@ -538,6 +538,14 @@ video {
   position: absolute;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
 .mb-40 {
   margin-bottom: 10rem;
 }
@@ -647,10 +655,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
