@@ -558,6 +558,10 @@ video {
   z-index: 10;
 }
 
+.float-right {
+  float: right;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -616,6 +620,18 @@ video {
 
 .mt-56 {
   margin-top: 14rem;
+}
+
+.ml-\[50\%\] {
+  margin-left: 50%;
+}
+
+.ml-\[90\%\] {
+  margin-left: 90%;
+}
+
+.ml-\[70\%\] {
+  margin-left: 70%;
 }
 
 .flex {
@@ -738,6 +754,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {

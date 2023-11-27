@@ -71,12 +71,16 @@ let lorenfun = function () {
     </div>
   </section>
   <section class="mt-10">
+  <!--
+  <img class="" src="src/image/loremimage/group 1.png" alt="">
+  -->
+  
     <div class="grid grid-cols-2">
       <div class="grid grid-cols-1 place-items-end">
         <div>
           <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Monsterlook 1.png" alt="">
           <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Portfolio 14 1.png" alt="">
-          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/_cyborg look 2.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/cyborg look 2.png" alt="">
           <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/beatrix.png" alt="">
           <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/matvey.png" alt="">
         </div>
@@ -166,13 +170,15 @@ let lorenfun = function () {
 
   let concept = document.getElementById("concept");
   concept.addEventListener("click", function () {
+    navbar.classList.add("flex");
+    navbar.classList.add("justify-end")
     page.innerHTML = `
-      <div class="mt-40">
+      <div class="mt-5">
         <h1 class="md:text-4xl text-2xl font-bold">CONCEPT</h1>
         <h1 class="md:text-2xl font-bold pt-2">LOREM IPSUM:</h1>
         <div class="mt-4">
           <img
-            class="rounded-sm"
+            class="mt-20"
             src="src/image/loremimage/concept/emphasises the Dysphoria.png"
             alt="" />
         </div>
@@ -189,11 +195,9 @@ let lorenfun = function () {
                 </li>
               </ul>
               <img
-                
                 src="src/image/loremimage/concept/IMG_5899 1.webp"
                 alt="" />
             </div>
-
             <div
               class="md:ml-10 border-red-700 border-4 p-4 flex items-center md:mt-0 mt-5">
               <div>
@@ -219,7 +223,6 @@ let lorenfun = function () {
             </div>
             <div>
               <img
-             
                 src="src/image/loremimage/concept/page from page.webp"
                 alt="" />
             </div>
