@@ -170,7 +170,7 @@ let lorenfun = function () {
       <div>
         <h1 class="md:text-4xl text-2xl font-bold">CONCEPT</h1>
         <h1 class="md:text-2xl font-bold pt-2">LOREM IPSUM:</h1>
-        <div class="bg-black p-10 mt-4 rounded-lg">
+        <div class="mt-4">
           <img
             class="rounded-sm"
             src="src/image/loremimage/concept/emphasises the Dysphoria.png"
@@ -189,7 +189,7 @@ let lorenfun = function () {
                 </li>
               </ul>
               <img
-                class="bg-black p-10 rounded-md"
+                
                 src="src/image/loremimage/concept/IMG_5899 1.webp"
                 alt="" />
             </div>
@@ -219,7 +219,7 @@ let lorenfun = function () {
             </div>
             <div>
               <img
-                class="bg-black p-10 rounded-md"
+             
                 src="src/image/loremimage/concept/page from page.webp"
                 alt="" />
             </div>
@@ -238,7 +238,6 @@ let lorenfun = function () {
             </div>
             <div>
               <img
-                class="bg-black p-10 rounded-md"
                 src="src/image/loremimage/concept/7DAE3680.webp"
                 alt="" />
             </div>
@@ -258,7 +257,6 @@ let lorenfun = function () {
             </div>
             <div>
               <img
-                class="bg-black p-10 rounded-md"
                 src="src/image/loremimage/concept/Your paragraph text (1).webp"
                 alt="" />
             </div>
@@ -268,7 +266,6 @@ let lorenfun = function () {
           class="grid md:grid-cols-2 grid-cols-1 items-center mb-40 -translate-y-2">
           <div>
             <img
-              class="bg-black p-10 rounded-md"
               src="src/image/loremimage/concept/MG_0107 2.webp"
               alt="" />
           </div>
