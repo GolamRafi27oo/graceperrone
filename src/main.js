@@ -69,8 +69,11 @@ let lorenfun = function () {
     </div>
   </section>
   <section class="mt-10 m-2">
+  <div class="flex justify-center">
+   <img class="bg-cover w-[100%] block" src="src/image/loremimage/back.png" alt="">
+  </div>
  
-  <img class="" src="src/image/loremimage/back.png" alt="">
+  
   
   <!--
     <div class="grid grid-cols-2">
@@ -176,7 +179,7 @@ let lorenfun = function () {
         <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
         <div>
           <img
-            class="mt-20"
+            class="mt-20 bg-cover w-[100%] block h-40"
             src="src/image/loremimage/concept/emphasises the Dysphoria.png"
             alt="" />
         </div>
@@ -351,7 +354,7 @@ let ourobofun = function () {
       </div>
     </section>
     <section class="mt-20">
-      <img src="src/image/OUROBOROS/galleryoroborus.png" alt="" />
+      <img class="bg-cover w-[100%] block" src="src/image/OUROBOROS/galleryoroborus.png" alt="" />
     </section>
   </section>
 </div>
@@ -361,66 +364,40 @@ let ourobofun = function () {
 let lillustrafun = function () {
   navfun();
   page.innerHTML = `
-  <div>
-  <div class="text-center">
-    <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
-    <div class="flex justify-center mt-20">
-      <div class="sm:w-80 sm:h-80  bg-red-700 rounded-full"></div>
-    </div>
-    <div class="flex justify-center ">
-      <img class="flex justify-center w-60 sm:-translate-y-56" src="src/image/ILLUSTRATION/drawing 1.webp" alt="">
-    </div>
-  </div>
-  <div class="grid md:grid-cols-2 mt-10">
-    <div class="text-left">
-      <h1 class="md:text-4xl text-2xl font-bold">POST-HUMAN WORLD BUILDING</h1>
-      <p class="mt-4 font-semibold">MY WORK IS BORN OUT OF AN IMAGINED POST-HUMAN WORLD WHICH CONSIDERS THE CLASHES, TENSIONS, AND CONSEQUENCES, OF LIVING IN AN AGE WHERE THE DISTINCTION BETWEEN THE REAL AND THE DIGITAL, THE ORIGINAL AND ITS REPRODUCTIONS, IS BECOMING EVERMORE UNCLEAR. ESSENTIAL POST-HUMAN QUESTIONS INCLUDE CONSIDERATIONS OF WHERE OUR BODIES STOP GIVEN OUR EVER-DEPENDANT RELATIONSHIP WITH TECHNOLOGY, AND IMAGINING A SCENARIO AND CREATING FOR THAT.  I CONSIDER THE ROLES, HUMAN OR AUTOMATED, PEOPLE IN THE FUTURE MAY TAKE. FOR EXAMPLE, IF SOMEONE IS A NOMAD WHAT TOOLS WOULD THEY NEED, AND HOW WOULD THEY MAKE USE OF THE RESOURCES WOULD THEY HAVE?</p>
-    </div>
-    <div class="flex items-center">
-      <img src="src/image/ILLUSTRATION/cool asset 1.webp" alt="">
-    </div>
-  </div>
-  <div>
-    <div class="grid sm:grid-cols-3 sm:mt-40 mt-20 p-5 justify-center">
-      <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-        <img class="h-80" src="src/image/ILLUSTRATION/scan_s1975580_2023-08-06-00-03-18 3 1.webp" alt="">
-      </div>
-      <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-        <img class="h-80" src="src/image/ILLUSTRATION/scan_s1975580_2023-08-06-00-03-18 4 1.webp" alt="">
-
-      </div>
-      <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-        <img class="h-80" src="src/image/ILLUSTRATION/scan_s1975580_2023-08-06-00-03-18 5 1.webp" alt="">
-
-      </div>
-      <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-        <img class="h-80 " src="src/image/ILLUSTRATION/cyborgprincesschimera 1.webp" alt="">
-      </div>
-      <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-        <img class="h-80" src="src/image/ILLUSTRATION/hatguy 2.webp" alt="">
-      </div>
-    </div>
-    <div class="mt-40 md:text-4xl text-2xl font-bold">
-      <h1>CYBORG ILLUSTRATION</h1>
-      <div class="grid sm:grid-cols-2">
-        <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-          <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-09-07 at 16.30 1.webp" alt="">
-        </div>
-        <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-          <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-09-18 at 19.13 1.webp" alt="">
-        </div>
-        <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-          <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-09-20 at 17.00 1.webp" alt="">
-        </div>
-        <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-          <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/Screenshot 2023-10-17 at 19.00 1.webp" alt="">
-        </div>
-        <div class="bg-white m-2 shadow-2xl flex justify-center p-4 rounded-md">
-          <img class="h-80 rounded-md" src="src/image/ILLUSTRATION/thumbnail_Screenshot 2023-09-15 at 21.03 1.webp" alt="">
-        </div>
+  <section>
+  <div class="flex justify-center items-center">
+    <div class="text-center">
+      <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
+      <div class="shadow-white shadow-2xl shadow- rounded-[50%]">
+        <img class="mt-10" src="src/image/ILLUSTRATION/doll.png" alt="" />
       </div>
     </div>
   </div>
+  <div class="flex justify-end md:mr-[10%]">
+    <img class="max-lg:hidden" src="src/image/ILLUSTRATION/leg.png" alt="" />
+  </div>
+  <div class="lg:-translate-y-[500px] md:w-[90vh] lg:ml-[10%] max-lg:mt-10">
+    <h1 class="lg:text-6xl md:text-4xl text-2xl text-[#766FB2] font-bold">
+      POST-HUMAN WORLD BUILDING
+    </h1>
+    <p class="md:text-lg text-base font-bold">
+       My work is born out of an imagined Post-Human world which considers the
+      clashes, tensions, and consequences, of living in an age where the
+      distinction between the real and the digital, the original and its
+      reproductions, is becoming evermore unclear. Essential Post-Human
+      questions include considerations of where our bodies stop given our
+      ever-dependant relationship with technology, and imagining a scenario and
+      creating for that.  I consider the roles, human or automated, people in
+      the future may take. For example, if someone is a nomad what tools would
+      they need, and how would they make use of the resources would they have?
+    </p>
+  </div>
+  <div class="lg:-translate-y-[500px]">
+    <img src="src/image/ILLUSTRATION/ILLUSTRATION.png" alt="" />
+    <img class="mt-40" src="src/image/ILLUSTRATION/glry.png" alt="" />
+    <img class="mt-40" src="src/image/ILLUSTRATION/grap.png" alt="" />
+  </div>
+</section>
   `;
 };
 
@@ -439,7 +416,7 @@ oroborusnav.addEventListener("click", function () {
   ourobofun();
 });
 
-/*
+
 
 lillustration.addEventListener("click", function () {
   lillustrafun();
@@ -447,4 +424,4 @@ lillustration.addEventListener("click", function () {
 lillustrationav.addEventListener("click", function () {
   lillustrafun();
 });
-*/
+
