@@ -47,7 +47,7 @@ let lorenfun = function () {
   page.innerHTML = `
   <section>
   <section class="mt-40 ">
-    <div class="grid md:grid-cols-2 items-center">
+    <div class="grid md:grid-cols-2 items-center m-2">
       <div>
         <h1 class="md:text-4xl text-2xl font-bold">LOREM IPSUM:</h1>
         <h1 class="md:text-2xl text-xl font-bold pt-2">
@@ -72,10 +72,10 @@ let lorenfun = function () {
     </div>
   </section>
   <section class="mt-10">
-  <!--
+ 
   <img class="" src="src/image/loremimage/group 1.png" alt="">
-  -->
   
+  <!--
     <div class="grid grid-cols-2">
       <div class="grid grid-cols-1 place-items-end">
         <div>
@@ -103,7 +103,7 @@ let lorenfun = function () {
 
   </section>
 
-  <section class="mt-40 font-bold ">
+  <section class="mt-40 font-bold m-2">
     <h1 class="text-4xl  text-center text-[#A49B9B]">FURTHER</h1>
     <p class="text-sm pt-2 mt-10">
       CORE TO "LOREM IPSUM” IS AN INVESTIGATION OF HYPERREALITY AND
@@ -166,6 +166,7 @@ let lorenfun = function () {
       </div>
     </div>
     </section>
+    -->
   </section>
     `;
 
@@ -173,19 +174,17 @@ let lorenfun = function () {
   concept.addEventListener("click", function () {
     navbar.classList.add("right-52");
     page.innerHTML = `
-      <div>
+      <div class="mt-10">
+        <h1 class="md:text-4xl text-2xl font-bold m-2">CONCEPT</h1>
+        <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
         <div>
-        </div>
-        <h1 class="md:text-4xl text-2xl font-bold">CONCEPT</h1>
-        <h1 class="md:text-2xl font-bold pt-2">LOREM IPSUM:</h1>
-        <div class="sm:mt-20 p-0 m-0 top-8 left-0 right-0 bg-cover absolute">
           <img
             class="mt-20"
             src="src/image/loremimage/concept/emphasises the Dysphoria.png"
             alt="" />
         </div>
 
-        <div class="p-2 border-l-black border-l-4 sm:mt-[100%] mt-[140%]">
+        <div class=" m-2 p-10 border-l-black border-l-4 ">
           <section class="grid md:grid-cols-2 grid-cols-1">
             <div>
               <ul class="flex items-center">
@@ -292,12 +291,17 @@ let lorenfun = function () {
 
 let ourobofun = function () {
   navfun();
+  navbar.classList.add("right-52");
   page.innerHTML = `
   <div>
   <section class="grid md:grid-cols-2 items-center font-semibold">
-    <div class="m-4">
-      <img class="rounded-md" src="src/image/OUROBOROS/oroboruslook1 1.webp" alt="">
+    <div>
+      <img
+        class="mb-1"
+        src="src/image/OUROBOROS/oroboruslook1 1.png"
+        alt="" />
     </div>
+    <div>
       <div class="text-left">
         <ul class="list-disc ml-10">
           <li>Coral Bleaching</li>
@@ -307,55 +311,51 @@ let ourobofun = function () {
           <li>Shibari</li>
         </ul>
         <ul class="ml-5 mt-5">
-          <p>“OUROBOROS EXPRESSES THE UNITY OF ALL THINGS, MATERIAL AND SPIRITUAL, WHICH NEVER DISAPPEARS BUT PERPETUALLY CHANGES FORM IN AN ETERNAL CYCLE OF DESTRUCTION AND RE-CREATION’</p>
+          <p>
+            “OUROBOROS EXPRESSES THE UNITY OF ALL THINGS, MATERIAL AND
+            SPIRITUAL, WHICH NEVER DISAPPEARS BUT PERPETUALLY CHANGES FORM
+            IN AN ETERNAL CYCLE OF DESTRUCTION AND RE-CREATION’
+          </p>
         </ul>
         <ul class="flex justify-center">
-          <img src="src/image/Layer 93 3.webp" alt="">
+          <img class="w-[30vh]" src="src/image/Layer 93 3.webp" alt="" />
         </ul>
       </div>
+    </div>
+    <div class="mt-20">
+      <img class="mb-1" src="src/image/OUROBOROS/IMG_4747 1.png" alt="" />
+      <img
+        class="mb-1"
+        src="src/image/OUROBOROS/IMG_4748 (3) 1.png"
+        alt="" />
+    </div>
   </section>
-  <section class="grid md:grid-cols-2 items-center font-semibold p-10 shadow-2xl rounded-lg">
-    <div class="m-4 shadow-2xl">
-      <img class="rounded-md" src="src/image/OUROBOROS/IMG_4748 (3) 1.webp" alt="">
-    </div>
-    <div>
-      <img class="rounded-md" src="src/image/OUROBOROS/IMG_4747 1.webp" alt="">
-    </div>
-    <div class="shadow-2xl">
-      <img class="rounded-md" src="src/image/OUROBOROS/IMG_4897 1.webp" alt="">
-    </div>
-    <div class="m-4">
-      <img class="rounded-md" src="src/image/OUROBOROS/display_img2.webp" alt="">
-      <p class="p-2">Zooxanthellae Is The Microscopic Algae Which Pigments Coral, The Two Organisms Are Reliant On Each Other For Survival. Because The Algae Does Not Have The Capacity To Handle Large Fluctuations In Temperature, The Organism Dies Stripping The Coral Of Its Colour. This Effect Is Called Coral Bleaching, A Name That Implies The Sterilisation Of Nature.</p>
-    </div>
-    <div class="shadow-2xl mt-4 mb-4">
-      <img class="rounded-md" src="src/image/OUROBOROS/IMG_9709.webp" alt="">
-    </div>
-    <div>
-      <img src="src/image/OUROBOROS/Layer 1.webp" alt="">
-    </div>
-    <div class="grid grid-cols-2 mt-10">
-      <img class="p-2" src="src/image/OUROBOROS/IMG_6579 1.webp" alt="">
-      <img src="src/image/OUROBOROS/04D68C2C-4407-4241-B246-51331D1E8499 1.webp" alt="">
-      <img class="p-2" src="src/image/OUROBOROS/IMG_6580 1.webp" alt="">
-      <img src="src/image/OUROBOROS/EB3C947E-4EDA-4CD4-AF5D-E8C74EBB14DE 1.webp" alt="">
-    </div>
-    <div class="m-6 translate-y-5 shadow-2xl">
-      <img class="rounded-md" src="src/image/OUROBOROS/FD4D9F47-4A27-455E-959F-AEE33FFF1C2C 1.webp" alt="">
-    </div>
-
-    <div class="mt-56">
-      <img src="src/image/OUROBOROS/20220511-_DSC4633 1.webp" alt="">
-    </div>
-    <div>
-      <img src="src/image/OUROBOROS/IMG_6581 1.webp" alt="">
-    </div>
-    <div>
-      <img src="src/image/OUROBOROS/IMG_6582 1.webp" alt="">
-    </div>
-    <div class="-translate-y-56">
-      <img src="src/image/OUROBOROS/IMG_6583 1.webp" alt="">
-    </div>
+  <section>
+    <section class="grid grid-cols-2 gap-2">
+      <div>
+        <img
+          class="mb-1"
+          src="src/image/OUROBOROS/IMG_4897 1.png"
+          alt="" />
+      </div>
+      <div>
+        <img
+          class="mb-1"
+          src="src/image/OUROBOROS/IMG_1483 1.png"
+          alt="" />
+        <p>
+          Zooxanthellae is the microscopic algae which pigments coral, the
+          two organisms are reliant on each other for survival. because
+          the algae does not have the capacity to handle large
+          fluctuations in temperature, the organism dies stripping the
+          coral of its colour. This effect is called coral bleaching, a
+          name that implies the sterilisation of nature.
+        </p>
+      </div>
+    </section>
+    <section class="mt-20">
+      <img src="src/image/OUROBOROS/galleryoroborus.png" alt="" />
+    </section>
   </section>
 </div>
   `;
@@ -435,13 +435,15 @@ lorennav.addEventListener("click", function () {
   lorenfun();
 });
 
-/*
+
 oroborus.addEventListener("click", function () {
   ourobofun();
 });
 oroborusnav.addEventListener("click", function () {
   ourobofun();
 });
+
+/*
 
 lillustration.addEventListener("click", function () {
   lillustrafun();
