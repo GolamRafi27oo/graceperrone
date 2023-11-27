@@ -12,10 +12,10 @@ let grace = document.getElementById("grace");
 let backimg = document.getElementById("backimg");
 
 grace.addEventListener('mouseover', function(){
-  backimg.style.backgroundImage =  'url(../../src/image/ghostlimage.png)';
+  backimg.style.backgroundImage =  "url(src/image/ghostlimage.png)";
 })
 grace.addEventListener('mouseout', function(){
-  backimg.style.backgroundImage = 'url("../../src/image/background.png")';
+  backimg.style.backgroundImage = 'url(../../src/image/background.png)';
 })
 
 let navfun = function () {
