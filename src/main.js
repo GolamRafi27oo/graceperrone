@@ -364,7 +364,7 @@ let ourobofun = function () {
 let lillustrafun = function () {
   navfun();
   page.innerHTML = `
-  <section>
+  <section class="m-2">
   <div class="flex justify-center items-center">
     <div class="text-center">
       <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
@@ -394,8 +394,10 @@ let lillustrafun = function () {
   </div>
   <div class="lg:-translate-y-[500px]">
     <img src="src/image/ILLUSTRATION/ILLUSTRATION.png" alt="" />
-    <img class="mt-40" src="src/image/ILLUSTRATION/glry.png" alt="" />
-    <img class="mt-40" src="src/image/ILLUSTRATION/grap.png" alt="" />
+    <div class="flex justify-center">
+      <img class="mt-40 " src="src/image/ILLUSTRATION/glry.png" alt="" />
+    </div>
+    <img class="mt-40 bg-cover w-[100%] block" src="src/image/ILLUSTRATION/grap.png" alt="" />
   </div>
 </section>
   `;
