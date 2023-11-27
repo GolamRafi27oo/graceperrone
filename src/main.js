@@ -71,9 +71,9 @@ let lorenfun = function () {
       </div>
     </div>
   </section>
-  <section class="mt-10">
+  <section class="mt-10 m-2">
  
-  <img class="" src="src/image/loremimage/group 1.png" alt="">
+  <img class="" src="src/image/loremimage/back.png" alt="">
   
   <!--
     <div class="grid grid-cols-2">
