@@ -8,6 +8,15 @@ let lillustration = document.getElementById("ILLUSTRATION");
 let lillustrationav = document.getElementById("ILLUSTRATIONAV");
 
 
+let grace = document.getElementById("grace");
+let backimg = document.getElementById("backimg");
+grace.addEventListener('mouseover', function(){
+  backimg.style.backgroundImage = 'url("../src/image/ghostlimage.png")';
+})
+grace.addEventListener('mouseout', function(){
+  backimg.style.backgroundImage = 'url("../src/image/background.png")';
+})
+
 let navfun = function () {
   navbar.classList.remove("hidden");
   let memu = document.getElementById("menu");
