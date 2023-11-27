@@ -43,6 +43,7 @@ let navfun = function () {
 
 let lorenfun = function () {
   navfun();
+  navbar.classList.remove("right-52");
   page.innerHTML = `
   <section>
   <section class="mt-40 ">
@@ -170,20 +171,21 @@ let lorenfun = function () {
 
   let concept = document.getElementById("concept");
   concept.addEventListener("click", function () {
-    navbar.classList.add("flex");
-    navbar.classList.add("justify-end")
+    navbar.classList.add("right-52");
     page.innerHTML = `
-      <div class="mt-5">
+      <div>
+        <div>
+        </div>
         <h1 class="md:text-4xl text-2xl font-bold">CONCEPT</h1>
         <h1 class="md:text-2xl font-bold pt-2">LOREM IPSUM:</h1>
-        <div class="mt-4">
+        <div class="mt-20 p-0 m-0 top-8 left-0 right-0 bg-cover absolute">
           <img
             class="mt-20"
             src="src/image/loremimage/concept/emphasises the Dysphoria.png"
             alt="" />
         </div>
 
-        <div class="p-2 border-l-black border-l-4 mt-10">
+        <div class="p-2 border-l-black border-l-4 mt-[110%]">
           <section class="grid md:grid-cols-2 grid-cols-1">
             <div>
               <ul class="flex items-center">
