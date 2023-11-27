@@ -7,44 +7,56 @@
   </head>
 
   <style>
-    body{
+    body {
       font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
       background: url("src/image/background.png");
-      background-repeat:round;
-    
+      background-repeat: round;
     }
   </style>
 
   <html class="scroll-smooth">
-    <body id="backimg" class="p-10" >
+    <body id="backimg" class="p-10">
       <nav
         id="navbar"
-        class="hidden absolute top-2 left-2 ease-in duration-150 z-10">
+        class="hidden top-2 left-2 ease-in duration-150 font-primary text-2xl">
         <div class="fixed">
-          <i class="fa-solid fa-bars cursor-pointer text-2xl text-red-700"></i>
+          <img
+            class="w-40"
+            src="src/image/logo funky diffuse 4_4 1.png"
+            alt="" />
         </div>
         <div
           id="menu"
-          class="hidden fixed w-48 bg-white p-4 shadow-2xl rounded-md translate-y-10">
+          class="hidden fixed w-52 bg-white p-4 shadow-2xl rounded-md">
           <img
-            class="flex justify-center items-center"
+            class="flex justify-center items-center w-48"
             src="src/image/homegif.gif"
             alt="" />
           <ul class="space-y-2 cursor-pointer font-semibold">
-            <li class="hover:text-red-700"><a href="index.html">HOME</a></li>
-            <li class="hover:text-red-700">ABOUT</li>
-            <li id="lorennav" class="hover:text-red-700">
+            <li class="hover:border-black border-2 border-dashed">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="hover:border-black border-2 border-dashed">ABOUT</li>
+            <li id="lorennav" class="hover:border-black border-2 border-dashed">
               <a href="#">LOREM IPSUM SS24</a>
             </li>
-            <li id="OROBORUSNAV" class="hover:text-red-700">
+            <li
+              id="OROBORUSNAV"
+              class="hover:border-black border-2 border-dashed">
               <a href="#">OROBORUS SS23</a>
             </li>
-            <li id="ILLUSTRATIONAV" class="hover:text-red-700">
+            <li
+              id="ILLUSTRATIONAV"
+              class="hover:border-black border-2 border-dashed">
               <a href="#">ILUSTRATION</a>
             </li>
-            <li class="hover:text-red-700"><a href="#">DIGITAL FASHON</a></li>
-            <li class="hover:text-red-700"><a href="#">STYLING</a></li>
-            <li class="hover:text-red-700">
+            <li class="hover:border-black border-2 border-dashed">
+              <a href="#">DIGITAL FASHON</a>
+            </li>
+            <li class="hover:border-black border-2 border-dashed">
+              <a href="#">STYLING</a>
+            </li>
+            <li class="hover:border-black border-2 border-dashed">
               <a href="#">TEXTILE INNOATION</a>
             </li>
           </ul>
@@ -60,7 +72,11 @@
           </div>
           <div class="text-center relative max-md:mt-10 mt-20">
             <div class="flex justify-center">
-              <h1 id="grace" class="cursor-pointer hover:border-black border-2 border-dashed w-[25vh]">Grace Perrone</h1>
+              <h1
+                id="grace"
+                class="cursor-pointer hover:border-black border-2 border-dashed w-[25vh]">
+                Grace Perrone
+              </h1>
             </div>
           </div>
           <div class="flex justify-center">
@@ -74,6 +90,7 @@
             <div class="w-[30vh]">
               <ul class="p-4 relative z-10 text-center">
                 <li
+                  id="loren"
                   class="hover:border-black border-2 border-dashed cursor-pointer">
                   lorem ipsum ss24
                 </li>
@@ -83,41 +100,78 @@
                 </li>
               </ul>
             </div>
-
           </div>
           <div class="flex justify-center">
-            <img class="max-md:w-[20vh]" src="src/image/Ellipse 3 1.webp" alt="">
+            <img
+              class="max-md:w-[20vh]"
+              src="src/image/Ellipse 3 1.webp"
+              alt="" />
           </div>
           <div class="justify-center flex mt-10 cursor-pointer">
-            <div class="md:w-[100vh] w-[100vh] md:-translate-y-80 sm:-translate-y-60">
+            <div
+              class="md:w-[130vh] w-[100vh] md:-translate-y-80 sm:-translate-y-60">
               <ul class="flex space-x-3">
-                <li id="ILLUSTRATION" class="hover:border-black border-2 border-dashed">ILLUSTRATION</li>
-                <li class="hover:border-black border-2 border-dashed">GLITCH WORK</li>
+                <li
+                  id="ILLUSTRATION"
+                  class="hover:border-black border-2 border-dashed">
+                  ILLUSTRATION
+                </li>
+                <li class="hover:border-black border-2 border-dashed">
+                  GLITCH WORK
+                </li>
               </ul>
               <ul class="flex space-x-3">
-                <li class="hover:border-black border-2 border-dashed">digital Fasion</li>
-                <li class="hover:border-black border-2 border-dashed">styling</li>
+                <li class="hover:border-black border-2 border-dashed">
+                  digital Fasion
+                </li>
+                <li class="hover:border-black border-2 border-dashed">
+                  styling
+                </li>
               </ul>
               <ul>
-                <li class="hover:border-black border-2 border-dashed w-[24vh]">textile Innovation</li>
+                <li class="hover:border-black border-2 border-dashed w-[24vh]">
+                  textile Innovation
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <footer>
-          <div class="space-x-4 relative">
-            <ul class="flex justify-center space-x-4 md:translate-y-64 translate-y-44 sm:translate-y-20">
-              <a href=""><img class="sm:w-8 w-4" src="src/image/footer/sketchfablogo.webp" alt=""></a>
-              <a href=""><img class="sm:w-8 w-4" src="src/image/footer/instagram.webp" alt=""></a>
-              <a href=""><img class="sm:w-8 w-4" src="src/image/footer/linked.webp" alt=""></a>
-              <a href=""><img class="sm:w-8 w-4" src="src/image/footer/youtubelogo.webp" alt=""></a>
-            </ul>
-          </div>
-          <div class="flex justify-center">
-            <img src="src/image/footer.png" alt="">
-          </div>
-        </footer>
+
       </section>
+      <footer>
+        <div class="space-x-4 relative">
+          <ul
+            class="flex justify-center space-x-4 md:translate-y-64 translate-y-44 sm:translate-y-20">
+            <a href=""
+              ><img
+                class="sm:w-8 w-4"
+                src="src/image/footer/sketchfablogo.webp"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="sm:w-8 w-4"
+                src="src/image/footer/instagram.webp"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="sm:w-8 w-4"
+                src="src/image/footer/linked.webp"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="sm:w-8 w-4"
+                src="src/image/footer/youtubelogo.webp"
+                alt=""
+            /></a>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <img src="src/image/footer.png" alt="" />
+        </div>
+      </footer>
       <script type="text/javascript" src="src/main.js"></script>
       <script
         src="https://kit.fontawesome.com/341994b7aa.js"

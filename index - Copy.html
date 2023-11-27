@@ -7,145 +7,221 @@
   </head>
 
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Exo:100);
     body {
       font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
-      text-align: center;
-      /* img size is 50x50 */
-      background: url("/src/image/background.png")
-        repeat 0 0;
-    }
-    body::before {
-      font-size: 8rem;
-      font-weight: 100;
-      font-style: normal;
+      background: url("src/image/background.png");
+      background-repeat: round;
     }
   </style>
 
   <html class="scroll-smooth">
-  <body class="p-10">
-    <nav id="navbar" class="hidden absolute top-2 left-2 ease-in duration-150 z-10">
-      <div class="fixed">
-        <i class="fa-solid fa-bars cursor-pointer text-2xl text-red-700"></i>
-      </div>
-      <div id="menu" class="hidden fixed w-48 bg-white p-4 shadow-2xl rounded-md translate-y-10">
-        <img class="flex justify-center items-center" src="src/image/homegif.gif" alt="">
-        <ul class="space-y-2 cursor-pointer font-semibold">
-          <li class="hover:text-red-700"><a href="index.html">HOME</a></li>
-          <li class="hover:text-red-700">ABOUT</li>
-          <li id="lorennav" class="hover:text-red-700"><a href="#">LOREM IPSUM SS24</a></li>
-          <li id="OROBORUSNAV" class="hover:text-red-700"><a href="#">OROBORUS SS23</a></li>
-          <li id="ILLUSTRATIONAV" class="hover:text-red-700"><a href="#">ILUSTRATION</a></li>
-          <li class="hover:text-red-700"><a href="#">DIGITAL FASHON</a></li>
-          <li class="hover:text-red-700"><a href="#">STYLING</a></li>
-          <li class="hover:text-red-700"><a href="#">TEXTILE INNOATION</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <section id="pages" class="ease-in duration-150">
-      <!--Main.js-->
-      <div>
-        <section class="grid md:grid-cols-2 items-center font-semibold">
-          <div class="m-4 flex justify-center">
-            <img class="rounded-md h-[80vh]" src="src/image/OUROBOROS/oroboruslook1 1.webp" alt="">
-          </div>
-            <div class="text-left">
-              <ul class="list-disc ml-10">
-                <li>Coral Bleaching</li>
-                <li>Corsetry</li>
-                <li>Symbiosis</li>
-                <li>Scaffoiding</li>
-                <li>Shibari</li>
-              </ul>
-              <ul class="ml-5 mt-5">
-                <p>“OUROBOROS EXPRESSES THE UNITY OF ALL THINGS, MATERIAL AND SPIRITUAL, WHICH NEVER DISAPPEARS BUT PERPETUALLY CHANGES FORM IN AN ETERNAL CYCLE OF DESTRUCTION AND RE-CREATION’</p>
-              </ul>
-              <ul class="flex justify-center">
-                <img src="src/image/Layer 93 3.webp" alt="">
-              </ul>
-            </div>
-        </section>
-        <section class="grid md:grid-cols-3 items-center font-semibold p-10 shadow-2xl rounded-lg">
-          <div class="m-4 flex justify-center">
-            <img class="rounded-md h-[70vh]" src="src/image/OUROBOROS/IMG_4748 (3) 1.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="rounded-md h-[70vh]" src="src/image/OUROBOROS/IMG_4747 1.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="rounded-md h-[70vh]" src="src/image/OUROBOROS/IMG_4897 1.webp" alt="">
-          </div>
-          <div class="m-4 md:text-left text-center">
-            <div class="flex justify-center">
-              <img class="w-[50vh] rounded-md h-[30vh]" src="src/image/OUROBOROS/display_img2.webp" alt="">
-
-            </div>
-            <p class="p-2">Zooxanthellae Is The Microscopic Algae Which Pigments Coral, The Two Organisms Are Reliant On Each Other For Survival. Because The Algae Does Not Have The Capacity To Handle Large Fluctuations In Temperature, The Organism Dies Stripping The Coral Of Its Colour. This Effect Is Called Coral Bleaching, A Name That Implies The Sterilisation Of Nature.</p>
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="rounded-md h-[70vh] w-[60vh" src="src/image/OUROBOROS/IMG_9709.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="rounded-md h-[70vh] w-[60vh]" src="src/image/OUROBOROS/Layer 1.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <div class="grid md:grid-cols-2 grid-cols-4">
-              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/IMG_6579 1.webp" alt="">
-              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/04D68C2C-4407-4241-B246-51331D1E8499 1.webp" alt="">
-              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/IMG_6580 1.webp" alt="">
-              <img class="h-[20vh] m-1" src="src/image/OUROBOROS/EB3C947E-4EDA-4CD4-AF5D-E8C74EBB14DE 1.webp" alt="">
-            </div>          
-          </div>
-
-          <div class="m-4 flex justify-center">
-            <img class="rounded-md h-[40vh]" src="src/image/OUROBOROS/FD4D9F47-4A27-455E-959F-AEE33FFF1C2C 1.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/20220511-_DSC4633 1.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/IMG_6581 1.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/IMG_6582 1.webp" alt="">
-          </div>
-          <div class="m-4 flex justify-center">
-            <img class="h-[40vh] w-[30vh] rounded-md"  src="src/image/OUROBOROS/IMG_6583 1.webp" alt="">
-          </div>
-        </section>
-      </div>
-    <section>
-      <footer class="justify-center text-center cursor-pointer">
-        <div class="flex justify-center">
-          <ul class="text-center sm:text-4xl text-base translate-y-60">
-            <a href="https://sketchfab.com/cybrinx" target="_blank"
-              ><img
-                class="fa-brands sm:w-9 w-5 sm:pb-2 pb-1"
-                src="src/image/sketchfab.png"
-                alt=""
-            /></a>
-            <a href="https://www.instagram.com/femmeboyarmy/" target="_blank"
-              ><i class="fa-brands fa-instagram hover:text-[#ee353a]"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/grace-perrone-9a6763218/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin hover:text-[#0a63bc]"></i
-            ></a>
-            <a href="https://www.youtube.com/@graceperrone2771" target="_blank"
-              ><i class="fa-brands fa-youtube hover:text-[#f70000]"></i
-            ></a>
+    <body id="backimg" class="p-10">
+      <nav
+        id="navbar"
+        class=" top-2 left-2 ease-in duration-150 font-primary text-2xl">
+        <div class="fixed">
+          <img
+            class="w-40"
+            src="src/image/logo funky diffuse 4_4 1.png"
+            alt="" />
+        </div>
+        <div
+          id="menu"
+          class="hidden fixed w-52 bg-white p-4 shadow-2xl rounded-md">
+          <img
+            class="flex justify-center items-center w-48"
+            src="src/image/homegif.gif"
+            alt="" />
+          <ul class="space-y-2 cursor-pointer font-semibold">
+            <li class="hover:border-black border-2 border-dashed">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="hover:border-black border-2 border-dashed">ABOUT</li>
+            <li id="lorennav" class="hover:border-black border-2 border-dashed">
+              <a href="#">LOREM IPSUM SS24</a>
+            </li>
+            <li
+              id="OROBORUSNAV"
+              class="hover:border-black border-2 border-dashed">
+              <a href="#">OROBORUS SS23</a>
+            </li>
+            <li
+              id="ILLUSTRATIONAV"
+              class="hover:border-black border-2 border-dashed">
+              <a href="#">ILUSTRATION</a>
+            </li>
+            <li class="hover:border-black border-2 border-dashed">
+              <a href="#">DIGITAL FASHON</a>
+            </li>
+            <li class="hover:border-black border-2 border-dashed">
+              <a href="#">STYLING</a>
+            </li>
+            <li class="hover:border-black border-2 border-dashed">
+              <a href="#">TEXTILE INNOATION</a>
+            </li>
           </ul>
         </div>
-        <div class="flex justify-center">
-          <img class="w-[150vh] h-[50vh]" src="src/image/footer.png" alt="" />
-        </div>
-      </footer>
-    </section>
-    <script type="text/javascript" src="src/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/341994b7aa.js"
-      crossorigin="anonymous"></script>
-  </body>
+      </nav>
+      <section id="pages" class="ease-in duration-150">
+        <section>
+          <section class="mt-40 ">
+            <div class="grid md:grid-cols-2 items-center">
+              <div>
+                <h1 class="md:text-4xl text-2xl font-bold">LOREM IPSUM:</h1>
+                <h1 class="md:text-2xl text-xl font-bold pt-2">
+                  UNVEILING THE HYPERREAL SIMULACRA
+                </h1>
+                <p class="smd:text-sm text-xs pt-2 font-bold">
+                  "LOREM IPSUM" IS CONCERNED WITH THE UNIQUE INTERACTIONS BETWEEN GEN-Z
+                  AND THE INTERNET, WHERE THE BOUNDARIES BETWEEN REALITY AND SIMULATION
+                  ARE BECOMING INCREASINGLY BLURRED. INSPIRED BY DELEUZES’ “DIFFERENCE &
+                  REPETITION” AND THE TRANSFORMATIVE POWER OF AI, THIS COLLECTION
+                  EXPLORES THE PROFOUND IMPACT OF AI PROCESSING ON THE HUMAN EXPERIENCE;
+                  AND THE DENATURING EFFECT OF RELENTLESS REPRODUCTION.
+                </p>
+              </div>
+              <div>
+                <ul class="flex justify-center items-center p-2">
+                  <li class=" p-2" ><img id="ring" src="src/image/ring.png" onmouseover="hover(this);" onmouseout="hoverOut(this)" alt=""></li>
+                  <li class=" p-2"><img src="src/image/Arrow 1.png" alt=""></li>
+                  <li class=" p-2 uppercase font-semibold text-[#A49B9B]">CLICK TO SEE Concept and Process</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="mt-10">
+            <div class="grid grid-cols-2">
+              <div class="grid grid-cols-1 place-items-end">
+                <div>
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Monsterlook 1.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Portfolio 14 1.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/_cyborg look 2.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/beatrix.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/matvey.png" alt="">
+                </div>
+              </div>
+              <div>
+                <div class="grid grid-cols-1 place-items-start">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 3.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 7.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 4.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 5.png" alt="">
+                  <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 6.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center ">
+              <img class="md:w-[20vh] w-[10vh]  md:-translate-y-20 -translate-y-10" src="src/image/ring.png" alt="">
+  
+            </div>
+  
+          </section>
+        
+          <section class="mt-40 font-bold ">
+            <h1 class="text-4xl  text-center text-[#A49B9B]">FURTHER</h1>
+            <p class="text-sm pt-2 mt-10">
+              CORE TO "LOREM IPSUM” IS AN INVESTIGATION OF HYPERREALITY AND
+              SIMULACRA. THE DIGITAL REALM ‘MAKES SYNTHETIC’ OUR PHYSICAL REALITY
+              THROUGH A META/PHYSICAL FEEDBACK LOOP, DIGITAL REPRESENTATIONS
+              RE-ENTER THE ‘REAL WORLD’ AS COPIES OF COPIES, GRADUALLY ABSTRACTING
+              OUR RELATIONSHIP TO NATURE. THIS INTERPLAY BETWEEN THE SYNTHETIC AND
+              THE NATURAL CHALLENGES THE NOTIONS OF REALITY AND AUTHENTICITY,
+              INVITING VIEWERS TO QUESTION THE CONSTRUCTED NATURE OF OUR ONLINE
+              LIVES AND THE EPHEMERAL BOUNDARIES BETWEEN THE REAL AND THE SIMULATED
+            </p>
+            <p class="text-sm   pt-2  mt-10">
+              BRINGING THIS CONCEPT TO LIFE, THE SPRING SUMMER COLLECTION "LOREM
+              IPSUM" FEATURES DIGITAL GARMENTS THAT EMBODY THE TRANSFORMATIVE
+              EFFECTS OF AI PROCESSING. LEVERAGING ADVANCED SOFTWARE, DIGITAL
+              MODELS, AND DIGITAL PATTERN CUTTING, THE COLLECTION PUSHES THE
+              BOUNDARIES OF TRADITIONAL TEXTILES, EMBRACING THESE SOFTWARE'S
+              POTENTIAL FOR INNOVATION. THROUGH THIS DIGITAL AND PHYSICAL SYNTHESIS,
+              THE COLLECTION MANIFESTS ITS VISION, RESULTING IN TORTURED FORMS AND
+              DISTORTED GRAPHICS, A COLLECTION LACED WITH THE ARTEFACTS OF ITS MODE
+              OF PRODUCTION, GLITCHES PRESERVED AS EVIDENCE OF ITS DIGITAL ORIGIN.
+            </p>
+            <p class="text-sm pt-2 mt-10">
+              THE COLLECTION CONSIDERS THE CLASHES, TENSIONS, AND CONSEQUENCES, OF
+              LIVING IN AN AGE WHERE THE DISTINCTION BETWEEN THE REAL AND THE
+              DIGITAL, THE ORIGINAL AND ITS REPRODUCTIONS, IS BECOMING EVERMORE
+              UNCLEAR. IT REFLECTS THE METAMORPHOSIS OF OUR SUBJECTIVITY AS WE
+              NAVIGATE A WORLD OF CURATED ONLINE PROFILES, CONSTRUCTED
+              SELF-MYTHOLOGIES, UBIQUITOUS ARTIFICE AND AUTO-OBSERVATION. IT
+              EMPHASISES THE DYSPHORIA THAT’S BORN OF THESE DISPARITIES, BETWEEN THE
+              IDENTITIES WE CURATE AND THE INEVITABLE CONTRADICTIONS THAT COME
+              COMPLEMENTARY TO BEING HUMAN. IN ESSENCE, “LOREM IPSUM” EXEMPLIFIES
+              THE PAIN ITSELF, INNATE TO THE NETWORKED SELF, TO ORGANIC BEINGS
+              EXISTING IN A POST-DIGITAL WORLD.
+            </p>
+          </section>
+          <section>
+            <div class="flex justify-center mt-10">
+              <img class="w-[40vh]" src="src/image/Layer 93 3.webp" alt="" />
+            </div>
+            <div class="mt-40">
+              <h1 class="text-[#A49B9B] text-4xl font-bold text-center">GALLERY</h1>
+              <div
+                class="mt-10 grid gap-4 md:grid-cols-3 sm:grid-cols-2 justify-center items-center">
+                <img
+                  src="src/image/loremimage/gallery/MG_0113 3.webp"
+                  alt="" />
+                <img
+                  src="src/image/loremimage/gallery/DSC_1955 Large 1.webp"
+                  alt="" />
+                <img
+                  src="src/image/loremimage/gallery/graphittimat 1.webp"
+                  alt="" />
+                <img
+                  src="src/image/loremimage/gallery/matveytwin 1.webp"
+                  alt="" />
+                <img
+                  src="src/image/loremimage/gallery/post 2.webp"
+                  alt="" />
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+        <footer>
+          <div class="space-x-4 relative">
+            <ul
+              class="flex justify-center space-x-4 md:translate-y-64 translate-y-44 sm:translate-y-20">
+              <a href=""
+                ><img
+                  class="sm:w-8 w-4"
+                  src="src/image/footer/sketchfablogo.webp"
+                  alt=""
+              /></a>
+              <a href=""
+                ><img
+                  class="sm:w-8 w-4"
+                  src="src/image/footer/instagram.webp"
+                  alt=""
+              /></a>
+              <a href=""
+                ><img
+                  class="sm:w-8 w-4"
+                  src="src/image/footer/linked.webp"
+                  alt=""
+              /></a>
+              <a href=""
+                ><img
+                  class="sm:w-8 w-4"
+                  src="src/image/footer/youtubelogo.webp"
+                  alt=""
+              /></a>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <img src="src/image/footer.png" alt="" />
+          </div>
+        </footer>
+      </section>
+      <script type="text/javascript" src="src/main.js"></script>
+      <script
+        src="https://kit.fontawesome.com/341994b7aa.js"
+        crossorigin="anonymous"></script>
+    </body>
+  </html>
 </html>

@@ -9,13 +9,23 @@ let lillustrationav = document.getElementById("ILLUSTRATIONAV");
 
 let grace = document.getElementById("grace");
 let backimg = document.getElementById("backimg");
-
+let ring = document.getElementById("ring");
 grace.addEventListener("mouseover", function () {
   backimg.style.backgroundImage = 'url("src/image/ghostlimage.png")';
 });
 grace.addEventListener("mouseout", function () {
   backimg.style.backgroundImage = 'url("src/image/background.png")';
 });
+
+
+function hover(img)
+{
+ img.src = "src/image/ghostlimage.png"
+}
+function hoverOut(img){
+  img.src = "src/image/ring.png"
+ }
+
 
 let navfun = function () {
   navbar.classList.remove("hidden");
@@ -35,72 +45,62 @@ let lorenfun = function () {
   navfun();
   page.innerHTML = `
   <section>
-    <h1 class="text-4xl font-bold">LOREM IPSUM:</h1>
-    <h1 class="text-2xl font-bold pt-2">
-      UNVEILING THE HYPERREAL SIMULACRA
-    </h1>
-    <p class="text-base pt-2 font-semibold">
-      "LOREM IPSUM" IS CONCERNED WITH THE UNIQUE INTERACTIONS BETWEEN GEN-Z
-      AND THE INTERNET, WHERE THE BOUNDARIES BETWEEN REALITY AND SIMULATION
-      ARE BECOMING INCREASINGLY BLURRED. INSPIRED BY DELEUZES’ “DIFFERENCE &
-      REPETITION” AND THE TRANSFORMATIVE POWER OF AI, THIS COLLECTION
-      EXPLORES THE PROFOUND IMPACT OF AI PROCESSING ON THE HUMAN EXPERIENCE;
-      AND THE DENATURING EFFECT OF RELENTLESS REPRODUCTION.
-    </p>
-    <button id ="concept"
-      class="mt-4 p-2 bg-black text-white font-semibold rounded-md hover:bg-red-700 ease-in duration-150">
-      CLICK TO SEE CONCEPT AND PROCESS
-    </button>
-  </section>
-  <section class="mt-10">
-    <div
-      class="grid gap-4 md:grid-cols-4 sm:grid-cols-2 bg-black p-10 rounded-lg shadow-2xl">
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/cyborg look 2.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/beatrix face with stretch 1.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/CONTENT 1.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/lips 2.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/Monsterlook 1.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/Perrone, Grace, _Ai Matvey_ foam offcuts, lycra, denim, organza, 25_4_23 1.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/Perrone,Grace, _Monster_, foam offcuts, lycra, hair, upcycled shoes, latex, 15_5_23 1.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/Portfolio 14 1.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/Portfolio 19 1.webp"
-        alt="" />
-      <img
-        class="rounded-lg"
-        src="src/image/loremimage/tattoo wrap-Recovered_2080983 2.webp"
-        alt="" />
+  <section class="mt-40 ">
+    <div class="grid md:grid-cols-2 items-center">
+      <div>
+        <h1 class="md:text-4xl text-2xl font-bold">LOREM IPSUM:</h1>
+        <h1 class="md:text-2xl text-xl font-bold pt-2">
+          UNVEILING THE HYPERREAL SIMULACRA
+        </h1>
+        <p class="smd:text-sm text-xs pt-2 font-bold">
+          "LOREM IPSUM" IS CONCERNED WITH THE UNIQUE INTERACTIONS BETWEEN GEN-Z
+          AND THE INTERNET, WHERE THE BOUNDARIES BETWEEN REALITY AND SIMULATION
+          ARE BECOMING INCREASINGLY BLURRED. INSPIRED BY DELEUZES’ “DIFFERENCE &
+          REPETITION” AND THE TRANSFORMATIVE POWER OF AI, THIS COLLECTION
+          EXPLORES THE PROFOUND IMPACT OF AI PROCESSING ON THE HUMAN EXPERIENCE;
+          AND THE DENATURING EFFECT OF RELENTLESS REPRODUCTION.
+        </p>
+      </div>
+      <div>
+        <ul class="flex justify-center items-center p-2">
+          <li class=" p-2" ><img id="ring" src="src/image/ring.png" onmouseover="hover(this);" onmouseout="hoverOut(this)" alt=""></li>
+          <li class=" p-2"><img src="src/image/Arrow 1.png" alt=""></li>
+          <li class=" p-2 uppercase font-semibold text-[#A49B9B]">CLICK TO SEE Concept and Process</li>
+        </ul>
+      </div>
     </div>
   </section>
+  <section class="mt-10">
+    <div class="grid grid-cols-2">
+      <div class="grid grid-cols-1 place-items-end">
+        <div>
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Monsterlook 1.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Portfolio 14 1.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/_cyborg look 2.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/beatrix.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/matvey.png" alt="">
+        </div>
+      </div>
+      <div>
+        <div class="grid grid-cols-1 place-items-start">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 3.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 7.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 4.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 5.png" alt="">
+          <img class="md:h-[90vh] md:w-[60vh]" src="src/image/loremimage/Group 6.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center ">
+      <img class="md:w-[20vh] w-[10vh]  md:-translate-y-20 -translate-y-10" src="src/image/ring.png" alt="">
 
-  <section class="mt-40">
-    <h1 class="text-4xl font-bold text-center">FURTHER</h1>
-    <p class="text-base pt-2 font-semibold mt-10">
+    </div>
+
+  </section>
+
+  <section class="mt-40 font-bold ">
+    <h1 class="text-4xl  text-center text-[#A49B9B]">FURTHER</h1>
+    <p class="text-sm pt-2 mt-10">
       CORE TO "LOREM IPSUM” IS AN INVESTIGATION OF HYPERREALITY AND
       SIMULACRA. THE DIGITAL REALM ‘MAKES SYNTHETIC’ OUR PHYSICAL REALITY
       THROUGH A META/PHYSICAL FEEDBACK LOOP, DIGITAL REPRESENTATIONS
@@ -110,7 +110,7 @@ let lorenfun = function () {
       INVITING VIEWERS TO QUESTION THE CONSTRUCTED NATURE OF OUR ONLINE
       LIVES AND THE EPHEMERAL BOUNDARIES BETWEEN THE REAL AND THE SIMULATED
     </p>
-    <p class="text-base pt-2 font-semibold mt-10">
+    <p class="text-sm   pt-2  mt-10">
       BRINGING THIS CONCEPT TO LIFE, THE SPRING SUMMER COLLECTION "LOREM
       IPSUM" FEATURES DIGITAL GARMENTS THAT EMBODY THE TRANSFORMATIVE
       EFFECTS OF AI PROCESSING. LEVERAGING ADVANCED SOFTWARE, DIGITAL
@@ -121,7 +121,7 @@ let lorenfun = function () {
       DISTORTED GRAPHICS, A COLLECTION LACED WITH THE ARTEFACTS OF ITS MODE
       OF PRODUCTION, GLITCHES PRESERVED AS EVIDENCE OF ITS DIGITAL ORIGIN.
     </p>
-    <p class="text-base pt-2 font-semibold mt-10">
+    <p class="text-sm pt-2 mt-10">
       THE COLLECTION CONSIDERS THE CLASHES, TENSIONS, AND CONSEQUENCES, OF
       LIVING IN AN AGE WHERE THE DISTINCTION BETWEEN THE REAL AND THE
       DIGITAL, THE ORIGINAL AND ITS REPRODUCTIONS, IS BECOMING EVERMORE
@@ -136,36 +136,31 @@ let lorenfun = function () {
     </p>
   </section>
   <section>
-    <div class="flex justify-center">
-      <img src="src/image/Layer 93 3.webp" alt="" />
+    <div class="flex justify-center mt-10">
+      <img class="w-[40vh]" src="src/image/Layer 93 3.webp" alt="" />
     </div>
     <div class="mt-40">
-      <h1 class="text-4xl font-bold text-center">GALLERY</h1>
-
+      <h1 class="text-[#A49B9B] text-4xl font-bold text-center">GALLERY</h1>
       <div
-        class="mt-10 grid gap-4 md:grid-cols-3 sm:grid-cols-2 bg-black rounded-lg p-10 shadow-2xl">
+        class="mt-10 grid gap-4 md:grid-cols-3 sm:grid-cols-2 justify-center items-center">
         <img
-          class="rounded-lg"
           src="src/image/loremimage/gallery/MG_0113 3.webp"
           alt="" />
         <img
-          class="rounded-lg"
           src="src/image/loremimage/gallery/DSC_1955 Large 1.webp"
           alt="" />
         <img
-          class="rounded-lg"
           src="src/image/loremimage/gallery/graphittimat 1.webp"
           alt="" />
         <img
-          class="rounded-lg"
           src="src/image/loremimage/gallery/matveytwin 1.webp"
           alt="" />
         <img
-          class="rounded-lg"
           src="src/image/loremimage/gallery/post 2.webp"
           alt="" />
       </div>
     </div>
+    </section>
   </section>
     `;
   let concept = document.getElementById("concept");
@@ -428,7 +423,7 @@ let lillustrafun = function () {
   </div>
   `;
 };
-/*
+
 loren.addEventListener("click", function () {
   lorenfun();
 });
@@ -436,6 +431,7 @@ lorennav.addEventListener("click", function () {
   lorenfun();
 });
 
+/*
 oroborus.addEventListener("click", function () {
   ourobofun();
 });
