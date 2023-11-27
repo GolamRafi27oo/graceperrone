@@ -702,6 +702,10 @@ video {
   margin-top: 110%;
 }
 
+.mt-\[140\%\] {
+  margin-top: 140%;
+}
+
 .flex {
   display: flex;
 }
@@ -1080,6 +1084,14 @@ video {
 @media (min-width: 640px) {
   .sm\:mt-40 {
     margin-top: 10rem;
+  }
+
+  .sm\:mt-\[100\%\] {
+    margin-top: 100%;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
   }
 
   .sm\:h-80 {
