@@ -179,7 +179,7 @@ let lorenfun = function () {
         <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
         <div>
           <img
-            class="mt-20 bg-cover w-[100%] block h-40"
+            class="mt-20 bg-cover w-[100%] block"
             src="src/image/loremimage/concept/emphasises the Dysphoria.png"
             alt="" />
         </div>
