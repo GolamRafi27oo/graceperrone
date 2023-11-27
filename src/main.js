@@ -6,10 +6,10 @@ let oroborus = document.getElementById("OROBORUS");
 let oroborusnav = document.getElementById("OROBORUSNAV");
 let lillustration = document.getElementById("ILLUSTRATION");
 let lillustrationav = document.getElementById("ILLUSTRATIONAV");
-
 let grace = document.getElementById("grace");
 let backimg = document.getElementById("backimg");
 let ring = document.getElementById("ring");
+
 grace.addEventListener("mouseover", function () {
   backimg.style.backgroundImage = 'url("src/image/ghostlimage.png")';
 });
@@ -63,7 +63,7 @@ let lorenfun = function () {
       </div>
       <div>
         <ul class="flex justify-center items-center p-2">
-          <li class=" p-2" ><img id="ring" src="src/image/ring.png" onmouseover="hover(this);" onmouseout="hoverOut(this)" alt=""></li>
+          <li id="concept" class=" p-2" ><img id="ring" src="src/image/ring.png" onmouseover="hover(this);" onmouseout="hoverOut(this)" alt=""></li>
           <li class=" p-2"><img src="src/image/Arrow 1.png" alt=""></li>
           <li class=" p-2 uppercase font-semibold text-[#A49B9B]">CLICK TO SEE Concept and Process</li>
         </ul>
@@ -163,6 +163,7 @@ let lorenfun = function () {
     </section>
   </section>
     `;
+
   let concept = document.getElementById("concept");
   concept.addEventListener("click", function () {
     page.innerHTML = `
@@ -425,6 +426,7 @@ let lillustrafun = function () {
 };
 
 loren.addEventListener("click", function () {
+  console.log("clicked")
   lorenfun();
 });
 lorennav.addEventListener("click", function () {
