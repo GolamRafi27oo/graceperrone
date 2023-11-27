@@ -690,6 +690,10 @@ video {
   width: 24vh;
 }
 
+.w-\[25vh\] {
+  width: 25vh;
+}
+
 .w-\[30vh\] {
   width: 30vh;
 }
@@ -700,18 +704,6 @@ video {
 
 .w-\[60vh\] {
   width: 60vh;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-\[32vh\] {
-  width: 32vh;
-}
-
-.w-\[25vh\] {
-  width: 25vh;
 }
 
 .-translate-x-2 {
@@ -965,14 +957,6 @@ video {
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[url\(\'\.\/src\/image\/hero-pattern\'\)\]:hover {
-  background-image: url('./src/image/hero-pattern');
-}
-
-.hover\:bg-\[url\(\'\.\.\/src\/image\/hero-pattern\'\)\]:hover {
-  background-image: url('../src/image/hero-pattern');
 }
 
 .hover\:text-\[\#0a63bc\]:hover {
