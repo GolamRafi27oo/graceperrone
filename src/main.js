@@ -17,15 +17,12 @@ grace.addEventListener("mouseout", function () {
   backimg.style.backgroundImage = 'url("src/image/background.png")';
 });
 
-
-function hover(img)
-{
- img.src = "src/image/ghostlimage.png"
+function hover(img) {
+  img.src = "src/image/ghostlimage.png";
 }
-function hoverOut(img){
-  img.src = "src/image/ring.png"
- }
-
+function hoverOut(img) {
+  img.src = "src/image/ring.png";
+}
 
 let navfun = function () {
   navbar.classList.remove("hidden");
@@ -428,13 +425,12 @@ let lillustrafun = function () {
 };
 
 loren.addEventListener("click", function () {
-  console.log("clicked")
+  console.log("clicked");
   lorenfun();
 });
 lorennav.addEventListener("click", function () {
   lorenfun();
 });
-
 
 oroborus.addEventListener("click", function () {
   ourobofun();
