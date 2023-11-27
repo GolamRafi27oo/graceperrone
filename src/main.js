@@ -167,7 +167,7 @@ let lorenfun = function () {
   let concept = document.getElementById("concept");
   concept.addEventListener("click", function () {
     page.innerHTML = `
-      <div>
+      <div class="mt-40">
         <h1 class="md:text-4xl text-2xl font-bold">CONCEPT</h1>
         <h1 class="md:text-2xl font-bold pt-2">LOREM IPSUM:</h1>
         <div class="mt-4">
