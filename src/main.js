@@ -9,6 +9,10 @@ let lillustrationav = document.getElementById("ILLUSTRATIONAV");
 let grace = document.getElementById("grace");
 let backimg = document.getElementById("backimg");
 let ring = document.getElementById("ring");
+let glitch = document.getElementById("glitch");
+let glitchnav = document.getElementById("glitchnav");
+let styling = document.getElementById("styling");
+let stylingnav = document.getElementById("stylingnav");
 
 grace.addEventListener("mouseover", function () {
   backimg.style.backgroundImage = 'url("src/image/ghostlimage.png")';
@@ -369,7 +373,7 @@ let lillustrafun = function () {
     <div class="text-center">
       <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
       <div class="shadow-white shadow-2xl shadow- rounded-[50%]">
-        <img class="mt-10" src="src/image/ILLUSTRATION/doll.png" alt="" />
+        <img class="mt-10 max-xl:w-[60vh]" src="src/image/ILLUSTRATION/doll.png" alt="" />
       </div>
     </div>
   </div>
@@ -403,8 +407,582 @@ let lillustrafun = function () {
   `;
 };
 
+let glitchfun = function () {
+  navfun();
+  page.innerHTML = `
+  <section>
+  <div class="flex justify-center font-bold md:text-4xl text-2xl mt-16">
+    <h1 class="flex text-center justify-center">Glitch work</h1>
+    <h1 id="back" class="absolute text-6xl right-10 cursor-pointer"><</h1>
+  </div>
+  <section id="Glitchin">
+    <div class="mt-20 flex justify-center w-[100%]">
+      <div class="grid grid-cols-2 gap-2 cursor-pointer">
+        <img
+          id="g1"
+          class="hover:brightness-50 hover:bg-gray-400"
+          src="src/image/gitchwork/Group 2.png"
+          alt="" />
+        <img
+          id="g2"
+          class="hover:brightness-50 hover:bg-gray-400"
+          src="src/image/gitchwork/Group 6.png"
+          alt="" />
+        <img
+          id="g3"
+          class="hover:brightness-50 hover:bg-gray-400"
+          src="src/image/gitchwork/Group 4.png"
+          alt="" />
+        <img
+          id="g4"
+          class="hover:brightness-50 hover:bg-gray-400"
+          src="src/image/gitchwork/Group 5.png"
+          alt="" />
+        <img
+          id="g5"
+          class="hover:brightness-50 hover:bg-gray-400"
+          src="src/image/gitchwork/Group 3.png"
+          alt="" />
+        <img
+          id="g6"
+          class="hover:brightness-50 hover:bg-gray-400"
+          src="src/image/gitchwork/Group 1.png"
+          alt="" />
+      </div>
+    </div>
+    <div
+      class="mt-20 flex justify-center uppercase md:text-xl font-bold md:translate-y-20">
+      <h1
+        id="digital"
+        class="bg-black text-white p-2 rounded-full cursor-pointer">
+        see digital fasion
+      </h1>
+    </div>
+  </section>
+</section>
+  `;
+  let Glitchin = document.getElementById("Glitchin");
+  let back = document.getElementById("back");
+
+  document.getElementById("g1").addEventListener("click", function () {
+    back.classList.add("left-10");
+    navbar.classList.add("right-52");
+
+    Glitchin.innerHTML = `
+    <section id="Glitch">
+      <div class=" mt-10 flex justify-center w-[100%]">
+        <img src="src/image/gitchwork/g1.png" alt="">
+      </div>
+    </section>
+    `;
+  });
+
+  document.getElementById("g2").addEventListener("click", function () {
+    back.classList.add("left-10");
+    navbar.classList.add("right-52");
+
+    Glitchin.innerHTML = `
+    <section id="Glitch">
+      <div class=" mt-10 flex justify-center w-[100%]">
+        <img src="src/image/gitchwork/g2.png" alt="">
+      </div>
+    </section>
+    `;
+  });
+
+  document.getElementById("g3").addEventListener("click", function () {
+    back.classList.add("left-10");
+    navbar.classList.add("right-52");
+
+    Glitchin.innerHTML = `
+    <section id="Glitch">
+      <div class=" mt-10 flex justify-center w-[100%]">
+        <img src="src/image/gitchwork/g3.png" alt="">
+      </div>
+    </section>
+    `;
+  });
+
+  document.getElementById("g4").addEventListener("click", function () {
+    back.classList.add("left-10");
+    navbar.classList.add("right-52");
+
+    Glitchin.innerHTML = `
+    <section id="Glitch">
+      <div class=" mt-10 flex justify-center w-[100%]">
+        <img src="src/image/gitchwork/g4.png" alt="">
+      </div>
+    </section>
+    `;
+  });
+
+  document.getElementById("g5").addEventListener("click", function () {
+    back.classList.add("left-10");
+    navbar.classList.add("right-52");
+
+    Glitchin.innerHTML = `
+    <section id="Glitch">
+      <div class=" mt-10 flex justify-center w-[100%]">
+        <img src="src/image/gitchwork/g5.png" alt="">
+      </div>
+    </section>
+    `;
+  });
+
+  document.getElementById("g6").addEventListener("click", function () {
+    back.classList.add("left-10");
+    navbar.classList.add("right-52");
+
+    Glitchin.innerHTML = `
+    <section id="Glitch">
+    <div class="grid md:grid-cols-2 mt-10 w-[100%]">
+      <div>
+        <img src="src/image/gitchwork/g6.png" alt="" />
+      </div>
+      <div class="text-center text-4xl font-bold">
+        <h1>Heaven</h1>
+        <h2 class="text-2xl">Album art</h2>
+        <p class="text-left font-medium md:text-xl text-lg md:mt-[300px]">
+          <a class="underline underline-offset-1" href="https://www.instagram.com/dvstrr__/" target="_blank">@dvstrr__</a>
+          delivers two electro spiritualist tracks for Goblin House records. The
+          A-Side ‘Ocean’ sounds like the load screen after the bright light boss
+          fight, whereas the B-Side ‘Split Skull’ should scratch the urge any
+          sadists might’ve had for field recordings of the seventh layer.
+        </p>
+      </div>
+    </div>
+  </section>
+    `;
+  });
+
+  back.addEventListener("click", function () {
+    navbar.classList.remove("right-52");
+    glitchfun();
+  });
+};
+
+let stylingfun = function () {
+  navfun();
+  page.innerHTML = `
+  <section>
+  <div class="justify-center font-bold">
+    <div class="ml-10">
+      <img
+        id="styimg"
+        class="bg-cover w-[100%] block"
+        src="src/image/styling/Group 22.png"
+        alt="" />
+    </div>
+  </div>
+  <section id="styling">
+    <div
+      class="uppercase flex justify-center md:text-6xl text-4xl font-bold text-[#A49B9B]">
+      <div class="text-center">
+        <img src="src/image/Layer 93 3.webp" alt="" />
+        <h1>Gallery</h1>
+      </div>
+    </div>
+    <div class="p-10 flex justify-center w-[100%]">
+      <div class="grid gap-2 grid-cols-3 mt-10">
+        <img
+          id="x1"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g1.png"
+          alt="" />
+        <img
+          id="x2"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g2.png"
+          alt="" />
+        <img
+          id="x3"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/galleryimage-8.png"
+          alt="" />
+        <img
+          id="x4"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g3.png"
+          alt="" />
+        <img
+          id="x5"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g4.png"
+          alt="" />
+        <img
+          id="x6"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/galleryimage-7.png"
+          alt="" />
+        <img
+          id="x7"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g5.png"
+          alt="" />
+        <img
+          id="x8"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g6.png"
+          alt="" />
+        <img
+          id="x9"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/galleryimage-5.png"
+          alt="" />
+        <img
+        id="x10"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g7.png"
+          alt="" />
+        <img
+          id="x11"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g8.png"
+          alt="" />
+        <img
+          id="x12"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/galleryimage.png"
+          alt="" />
+        <img
+          id="x13"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g9.png"
+          alt="" />
+        <img
+          id="x14"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/g10.png"
+          alt="" />
+        <img
+          id="x15"
+          class="hover:brightness-50"
+          src="src/image/styling/gallary/galleryimage-2.png"
+          alt="" />
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div>
+        <div class="flex justify-center">
+          <img src="src/image/Layer 93 3.webp" alt="" />
+        </div>
+        <div class="m-10">
+          <img id="field" src="src/image/styling/gallary/field1.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+`;
+
+  styimg.addEventListener("mouseover", function () {
+    styimg.src = "src/image/styling/Group 24.png";
+  });
+
+  styimg.addEventListener("mouseout", function () {
+    styimg.src = "src/image/styling/Group 22.png";
+  });
+
+  let field = document.getElementById("field");
+  field.addEventListener("mouseover", function () {
+    field.src = "src/image/styling/gallary/field2.png";
+  });
+
+  field.addEventListener("mouseout", function () {
+    field.src = "src/image/styling/gallary/field1.png";
+  });
+
+  styimg.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+    <section>
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div class="grid md:grid-cols-2 mt-10 w-[100%]">
+      <div>
+        <img src="src/image/styling/7CD712DB.png" alt="" />
+      </div>
+      <div class="text-center md:text-4xl text-2xl font-bold">
+        <h1>Kavari Promotional</h1>
+        <p class="text-left font-medium md:text-xl text-lg md:mt-[500px]">Photographer
+          <a class="underline underline-offset-1" href="https://www.instagram.com/alexbenecki/" target="_blank">@alexbenecki</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  });
+
+  let xx1 = function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+      <section class="m-10">
+        <div id="back" class="text-6xl p-4 cursor-pointer">
+          <
+        </div>
+        <div class="grid md:grid-cols-2 mt-10 w-[100%]">
+          <div>
+            <img src="src/image/styling/Group 1 (2).png" alt="" />
+          </div>
+          <div class="text-center md:text-4xl text-2xl font-bold">
+            <h1>Kavari Promotional</h1>
+            <p class="text-left font-medium md:text-xl text-lg  md:mt-[300px]">Model:
+              
+              <a class="underline underline-offset-1" href="https://www.instagram.com/oscryung/" target="_blank">@oscryungAgency</a>
+              <a class="underline underline-offset-1" href="https://www.instagram.com/coloursagency/" target="_blank">@coloursagency:</a>
+              <br>
+              Photographer:
+              <a class="underline underline-offset-1" href="https://www.instagram.com/margaritakalmikova/" target="_blank">@margaritakalmikova.</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  };
+
+  document.getElementById("x1").addEventListener("click", function () {
+    xx1();
+  });
+
+  document.getElementById("x7").addEventListener("click", function () {
+    xx1();
+  });
+
+  document.getElementById("x2").addEventListener("click", function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+  
+    <section class="m-10"> 
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div>
+      <img class="w-[100%] block" src="src/image//styling/Group 16 (1).png" alt="" />
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  });
+
+  let xx3 = function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+
+    <section class="m-10"> 
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div class="grid md:grid-cols-2 mt-10 w-[100%]">
+      <div>
+        <img src="src/image/styling/Group 1 (3).png" alt="" />
+      </div>
+      <div class="text-left md:text-4xl text-2xl font-bold md:ml-10">
+        <h1 class="w-72">Kavari for Ethel Cain’s freezer bride tour</h1>
+        <p class="text-left font-medium md:text-xl text-lg  md:mt-[300px]">This was a moment I was incredibly proud of; I made this piece for  
+          <a class="underline underline-offset-1" href="https://www.instagram.com/kavari_____/" target="_blank">@kavari_____</a> when she supported 
+          <a class="underline underline-offset-1" href="https://www.instagram.com/mothercain/"@mothercain</a>
+          this December. Pics by
+          <a class="underline underline-offset-1" href="https://www.instagram.com/spit.ting/" target="_blank">@spit.ting</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  };
+
+  document.getElementById("x3").addEventListener("click", function () {
+    xx3();
+  });
+  document.getElementById("x6").addEventListener("click", function () {
+    xx3();
+  });
+  document.getElementById("x9").addEventListener("click", function () {
+    xx3();
+  });
+
+  document.getElementById("x4").addEventListener("click", function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+  
+    <section class="m-10"> 
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div>
+      <img src="src/image//styling/Group 16 (1).png" alt="" />
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  });
+
+  document.getElementById("x5").addEventListener("click", function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+  
+    <section class="m-10"> 
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div class="grid md:grid-cols-2 mt-10 w-[100%]">
+      <div>
+        <img src="src/image/styling/8061AE07.png" alt="" />
+      </div>
+      <div class="text-left md:text-4xl text-2xl font-bold md:ml-10 uppercase">
+        <h1>ribbon dress</h1>
+        <h1>for etherial club kids</h1>
+        <h1>Dress by me </h1>
+        <p class="text-left font-medium md:text-xl text-lg  md:mt-[300px]">This was a moment I was incredibly proud of; I made this piece for  
+          <a class="underline underline-offset-1" href="https://www.instagram.com/kavari_____/" target="_blank">Photographer 
+          <a class="underline underline-offset-1" href="https://www.instagram.com/alexbenecki/ target="_blank">@alexbenecki</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  });
+
+  document.getElementById("x8").addEventListener("click", function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+    <section>
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div class="grid md:grid-cols-2 mt-10 w-[100%]">
+      <div>
+        <img src="src/image/styling/7CD712DB.png" alt="" />
+      </div>
+      <div class="text-center md:text-4xl text-2xl font-bold">
+        <h1>Kavari Promotional</h1>
+        <p class="text-left font-medium md:text-xl text-lg md:mt-[500px]">Photographer
+          <a class="underline underline-offset-1" href="https://www.instagram.com/alexbenecki/" target="_blank">@alexbenecki</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  });
+
+  let xx10 = function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+    <section class="m-10"> 
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div class="grid md:grid-cols-2 mt-10 w-[100%]">
+      <div>
+        <img src="src/image/styling/dfgerg.png" alt="" />
+      </div>
+      <div class="text-left md:text-4xl text-2xl font-bold md:ml-10 uppercase">
+        <h1 class="text-3xl">FW19</h1>
+        <h1 class="text-4xl">campaign </h1>
+        <h1>The great put on </h1>
+        <h1 class="text-base">Marthas vineyard MV</h1>
+        <p class="text-left font-medium md:text-xl text-lg  md:mt-[300px]">Photographer
+          <a class="underline underline-offset-1" href="https://www.instagram.com/thegreatputonmv/" target="_blank">@bennettsandefur</a> 
+          <br>
+          luxury items sourced from 
+          <a class="underline underline-offset-1" href="https://www.instagram.com/thegreatputonmv/" target="_blank">@thegreatputonmv</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  };
+  document.getElementById("x10").addEventListener("click", function () {
+    xx10();
+  });
+  document.getElementById("x11").addEventListener("click", function () {
+    xx10();
+  });
+  document.getElementById("x12").addEventListener("click", function () {
+    xx10();
+  });
+  document.getElementById("x14").addEventListener("click", function () {
+    xx10();
+  });
+  document.getElementById("x15").addEventListener("click", function () {
+    xx10();
+  });
+
+
+  document.getElementById("x13").addEventListener("click", function () {
+    window.scrollTo(0, 0);
+    navbar.classList.add("right-52");
+    page.innerHTML = `
+    <section class="m-10"> 
+    <div id="back" class="text-6xl p-4 cursor-pointer">
+      <
+    </div>
+    <div>
+      <img src="src/image//styling/sdgaer.png" alt="" />
+    </div>
+  </section>
+  `;
+
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+      backbutton();
+    });
+  });
+
+  let backbutton = function () {
+    navbar.classList.remove("right-52");
+    stylingfun();
+    window.scrollTo(0, 1700);
+  };
+};
+
 loren.addEventListener("click", function () {
-  console.log("clicked");
   lorenfun();
 });
 lorennav.addEventListener("click", function () {
@@ -418,8 +996,6 @@ oroborusnav.addEventListener("click", function () {
   ourobofun();
 });
 
-
-
 lillustration.addEventListener("click", function () {
   lillustrafun();
 });
@@ -427,3 +1003,18 @@ lillustrationav.addEventListener("click", function () {
   lillustrafun();
 });
 
+glitch.addEventListener("click", function () {
+  glitchfun();
+});
+
+glitchnav.addEventListener("click", function () {
+  glitchfun();
+});
+
+styling.addEventListener("click", function () {
+  stylingfun();
+});
+
+stylingnav.addEventListener("click", function () {
+  stylingfun();
+});
