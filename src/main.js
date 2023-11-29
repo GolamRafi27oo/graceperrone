@@ -6,24 +6,30 @@ let oroborus = document.getElementById("OROBORUS");
 let oroborusnav = document.getElementById("OROBORUSNAV");
 let lillustration = document.getElementById("ILLUSTRATION");
 let lillustrationav = document.getElementById("ILLUSTRATIONAV");
-let grace = document.getElementById("grace");
 let backimg = document.getElementById("backimg");
 let ring = document.getElementById("ring");
 let glitch = document.getElementById("glitch");
 let glitchnav = document.getElementById("glitchnav");
 let styling = document.getElementById("styling");
 let stylingnav = document.getElementById("stylingnav");
+let textile = document.getElementById("textile");
+let textilenav = document.getElementById("textilenav");
+let graceImg = document.getElementById("graceImg");
+let grace = document.getElementById("grace");
+let gracenav = document.getElementById("gracenav");
 
-grace.addEventListener("mouseover", function () {
+
+graceImg.addEventListener("mouseover", function () {
   backimg.style.backgroundImage = 'url("src/image/ghostlimage.png")';
 });
-grace.addEventListener("mouseout", function () {
+graceImg.addEventListener("mouseout", function () {
   backimg.style.backgroundImage = 'url("src/image/background.png")';
 });
 
 function hover(img) {
-  img.src = "src/image/ghostlimage.png";
+  img.src = "src/image/ring2.png";
 }
+
 function hoverOut(img) {
   img.src = "src/image/ring.png";
 }
@@ -367,6 +373,7 @@ let ourobofun = function () {
 
 let lillustrafun = function () {
   navfun();
+  navbar.classList.remove("right-52");
   page.innerHTML = `
   <section class="m-2">
   <div class="flex justify-center items-center">
@@ -409,6 +416,7 @@ let lillustrafun = function () {
 
 let glitchfun = function () {
   navfun();
+  navbar.classList.remove("right-52");
   page.innerHTML = `
   <section>
   <div class="flex justify-center font-bold md:text-4xl text-2xl mt-16">
@@ -954,7 +962,6 @@ let stylingfun = function () {
     xx10();
   });
 
-
   document.getElementById("x13").addEventListener("click", function () {
     window.scrollTo(0, 0);
     navbar.classList.add("right-52");
@@ -978,9 +985,176 @@ let stylingfun = function () {
   let backbutton = function () {
     navbar.classList.remove("right-52");
     stylingfun();
-    window.scrollTo(0, 1700);
+    window.scrollTo(0, 0);
   };
 };
+
+let innovafun = function(){
+  navbar.classList.remove("right-52");
+  navfun();
+  page.innerHTML = `
+  <section>
+  <div>
+    <img
+      class="w-[100%]"
+      src="src/image/MATERIAL INNOVATION/Group 1 (4).png"
+      alt="" />
+  </div>
+  <div class="flex justify-center items-center mt-20">
+    <div class="grid grid-cols-2 gap-10 p-10">
+      <img id="ino1" src="src/image/MATERIAL INNOVATION/woodlace 2 1.png" alt="" />
+      <img src="src/image/MATERIAL INNOVATION/lasercutwood 1.png" alt="" />
+      <img src="src/image/MATERIAL INNOVATION/Layer 3 1.png" alt="" />
+      <img id="ino2" src="src/image/MATERIAL INNOVATION/Layer 4 2.png" alt="" />
+      <img src="src/image/MATERIAL INNOVATION/boro 1.png" alt="" />
+      <img id="ino3" src="src/image/MATERIAL INNOVATION/hair 2.png" alt="" />
+    </div>
+  </div>
+  <div class="mt-10 justify-center flex">
+    <img
+      class="max-md:w-[30vh]"
+      src="src/image/MATERIAL INNOVATION/treyfullbusiness 1.png"
+      alt="" />
+  </div>
+</section>
+  `
+
+  let ino1 = document.getElementById("ino1");
+
+  ino1.addEventListener("mouseover", function () {
+    ino1.src = "src/image/MATERIAL INNOVATION/woodlace 2.png";
+  });
+
+  ino1.addEventListener("mouseout", function () {
+    ino1.src = "src/image/MATERIAL INNOVATION/woodlace 2 1.png";
+  });
+
+  let ino2 = document.getElementById("ino2");
+
+  ino2.addEventListener("mouseover", function () {
+    ino2.src = "src/image/MATERIAL INNOVATION/Layer 5 1.png";
+  });
+
+  ino2.addEventListener("mouseout", function () {
+    ino2.src = "src/image/MATERIAL INNOVATION/Layer 4 2.png";
+  });
+
+  let ino3 = document.getElementById("ino3");
+
+  ino3.addEventListener("mouseover", function () {
+    ino3.src = "src/image/MATERIAL INNOVATION/Layer 6 1.png";
+  });
+
+  ino3.addEventListener("mouseout", function () {
+    ino3.src = "src/image/MATERIAL INNOVATION/hair 2.png";
+  });
+}
+
+let gracefun = function(){
+  backimg.style.backgroundImage = 'url("src/image/background.png")';
+  navbar.classList.add("right-52");
+  navfun()
+  page.innerHTML = `
+  <section>
+  <div>
+    <img class="w-[100%]" src="src/image/gracehome/gracehome.png" alt="" />
+  </div>
+  <div>
+    <div class="grid sm:grid-cols-2 gap-10">
+      <div class="m-4 lg:text-3xl flex items-center">
+        <p>
+          Pushing software to its limits, Perrone embraces digital artefacts,
+          encouraging and preserving glitches as evidence of their garment’s
+          digital origin.
+          <br />
+          <br />
+          Referencing meme culture, Perrone starts their process with low-poly
+          images, manipulated using Photoshop and Procreate to draft high-impact
+          designs. CLO-3D Finds utility in the handling of material and
+          generating pattern-vector files for laser cutting physical material.
+          Every step of Perrone's process takes full advantage of digital assets
+          and the software at their disposal.
+        </p>
+      </div>
+      <div>
+        <img
+          id="myImage"
+          class="w-[100%]"
+          src="src/image/gracehome/g1.png"
+          alt="Image" />
+        <div class="flex justify-center">
+          <img class="w-[30vh]" src="src/image/CROWN HEADER.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="grid sm:grid-cols-3">
+      <div class="md:ml-10 flex items-center col-span-2">
+        <img
+          class="w-[100%]"
+          id="myImage"
+          src="src/image/gracehome/IMG_2314 Large 1.png"
+          alt="Image" />
+      </div>
+      <div class="m-4 lg:text-3xl flex items-center">
+        <div>
+          <h1 class="font-bold lg:text-5xl md:text-4xl text-xl text-center">
+            “THEMSWEAR”
+          </h1>
+          <h2>Lorem ipsum ss24</h2>
+          <p>
+            Facets of my neurodivergence and nonbinary identity are communicated
+            through this collection in its accessibility and non-gender-specific
+            nature, respectively. Much of the gender-neutral clothing
+            commercially available today exists in the form of shapeless,
+            loose-fitting, uniform-like garments, rarely diverging from a
+            monochromatic palette. It is with great irony that the very attire
+            of those challenging conventional gender norms so acutely reflected-
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="m-4 lg:text-3xl">
+    <p>
+      the term ‘uniformity’, nullifying in parts the very reason behind one’s
+      desire to break free from such status quo, to begin with. Instead of
+      reducing the nonbinary identity as neither, this collection entertains it
+      as both and more, prompting the audience to reconsider the relationship
+      between clothing and gender. <br /><br />
+      The complete digital parallels of my collection allow for further
+      accessibility to my work, especially to those restrained by financial
+      means or otherwise unable to purchase or wear the physical garments in my
+      attempt to contribute towards a more inclusive sphere in fashion.
+    </p>
+  </div>
+  <div
+    class="mt-20 flex justify-center uppercase md:text-xl font-bold md:translate-y-20">
+    <h1
+      id="digital"
+      class="bg-black text-white p-2 rounded-full cursor-pointer">
+      see digital fasion
+    </h1>
+  </div>
+</section>
+  `
+  var images = ["src/image/gracehome/g1.png", "src/image/gracehome/g2.png", "src/image/gracehome/g3.png"];
+  
+  var currentIndex = 0;
+
+  function changeImage() {
+    var imgElement = document.getElementById("myImage");
+
+    imgElement.src = images[currentIndex];
+    
+    // Increment the index or reset to 0 if it exceeds the array length
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  // Set interval to change the image every 3 seconds (3000 milliseconds)
+  setInterval(changeImage, 3000);
+}
 
 loren.addEventListener("click", function () {
   lorenfun();
@@ -1017,4 +1191,19 @@ styling.addEventListener("click", function () {
 
 stylingnav.addEventListener("click", function () {
   stylingfun();
+});
+
+textile.addEventListener("click", function () {
+  innovafun();
+});
+
+textilenav.addEventListener("click", function () {
+  innovafun();
+});
+
+grace.addEventListener("click", function () {
+  gracefun();
+});
+gracenav.addEventListener("click", function () {
+  gracefun();
 });

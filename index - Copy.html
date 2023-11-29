@@ -64,10 +64,79 @@
       </nav>
 
 
-        <section class="m-10"> 
-          <div id="back" class="text-6xl p-4 cursor-pointer">
-            <
+        <section> 
+          <div>
+            <img class="w-[100%]" src="src/image/gracehome/gracehome.png" alt="">
           </div>
+          <div>
+            <div class="grid sm:grid-cols-2 gap-10 ">
+              <div class="m-4 lg:text-3xl flex items-center">
+                <p>
+                  Pushing software to its limits, Perrone embraces digital artefacts,
+                  encouraging and preserving glitches as evidence of their garment’s digital
+                  origin. 
+                  <br>
+                  <br>
+                  Referencing meme culture, Perrone starts their process with low-poly
+                  images, manipulated using Photoshop and Procreate to draft high-impact
+                  designs. CLO-3D Finds utility in the handling of material and generating
+                  pattern-vector files for laser cutting physical material. Every step of
+                  Perrone's process takes full advantage of digital assets and the software at
+                  their disposal.
+                </p>
+              </div>
+              <div>
+                <img id="myImage" class="w-[100%]" src="src/image/gracehome/g1.png" alt="Image">
+                <div class="flex justify-center">
+                  <img class="w-[30vh]" src="src/image/CROWN HEADER.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="grid sm:grid-cols-3">
+              <div class="md:ml-10 flex items-center col-span-2">
+                <img class="w-[100%]" id="myImage" src="src/image/gracehome/IMG_2314 Large 1.png" alt="Image">
+                
+              </div>
+              <div class="m-4 lg:text-3xl flex items-center">
+                <div>
+                  <h1 class="font-bold lg:text-5xl md:text-4xl text-xl text-center">“THEMSWEAR”</h1>
+                  <h2>Lorem ipsum ss24</h2>
+                  <p>
+                    Facets of my neurodivergence and nonbinary identity are communicated through
+                    this collection in its accessibility and non-gender-specific nature,
+                    respectively. Much of the gender-neutral clothing commercially available today
+                    exists in the form of shapeless, loose-fitting, uniform-like garments, rarely
+                    diverging from a monochromatic palette. It is with great irony that the very
+                    attire of those challenging conventional gender norms so acutely reflected-
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-4 lg:text-3xl">
+            <p>
+              the term ‘uniformity’, nullifying in parts the very reason behind one’s desire
+              to break free from such status quo, to begin with. Instead of reducing the
+              nonbinary identity as neither, this collection entertains it as both and more,
+              prompting the audience to reconsider the relationship between clothing and
+              gender. <br /><br />
+              The complete digital parallels of my collection allow for further
+              accessibility to my work, especially to those restrained by financial means or
+              otherwise unable to purchase or wear the physical garments in my attempt to
+              contribute towards a more inclusive sphere in fashion.
+            </p>
+          </div>
+          <div
+          class="mt-20 flex justify-center uppercase md:text-xl font-bold md:translate-y-20">
+          <h1
+            id="digital"
+            class="bg-black text-white p-2 rounded-full cursor-pointer">
+            see digital fasion
+          </h1>
+        </div>
+        </section> 
           <div class="grid md:grid-cols-2 mt-10 w-[100%]">
             <div>
               <img src="src/image/styling/dfgerg.png" alt="" />
@@ -134,6 +203,23 @@
           </div>
         </footer>
       </section>
+      <script>
+          var images = ["src/image/gracehome/g1.png", "src/image/gracehome/g2.png", "src/image/gracehome/g3.png"];
+  
+  var currentIndex = 0;
+
+  function changeImage() {
+    var imgElement = document.getElementById("myImage");
+
+    imgElement.src = images[currentIndex];
+    
+    // Increment the index or reset to 0 if it exceeds the array length
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  // Set interval to change the image every 3 seconds (3000 milliseconds)
+  setInterval(changeImage, 3000);
+      </script>
       <script type="text/javascript" src="src/main.js"></script>
       <script
         src="https://kit.fontawesome.com/341994b7aa.js"
