@@ -305,7 +305,7 @@ let concepfun = function () {
 };
 let ourobofun = function () {
   navfun();
-  navbar.classList.add("right-52");
+  navbar.classList.add("sm:right-52");
   page.innerHTML = `
   <div>
   <section class="grid md:grid-cols-2 items-center font-semibold">
@@ -1060,7 +1060,7 @@ let innovafun = function () {
 
 let gracefun = function () {
   backimg.style.backgroundImage = 'url("src/image/background.png")';
-  navbar.classList.add("right-52");
+  navbar.classList.add("sm:right-52");
   navfun();
   page.innerHTML = `
   <section>
