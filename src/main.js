@@ -17,7 +17,8 @@ let textilenav = document.getElementById("textilenav");
 let graceImg = document.getElementById("graceImg");
 let grace = document.getElementById("grace");
 let gracenav = document.getElementById("gracenav");
-
+let digital = document.getElementById("digital");
+let digitalnav = document.getElementById("digitalnav");
 
 graceImg.addEventListener("mouseover", function () {
   backimg.style.backgroundImage = 'url("src/image/ghostlimage.png")';
@@ -183,122 +184,125 @@ let lorenfun = function () {
   let concept = document.getElementById("concept");
   concept.addEventListener("click", function () {
     navbar.classList.add("right-52");
-    page.innerHTML = `
-      <div class="mt-10">
-        <h1 class="md:text-4xl text-2xl font-bold m-2">CONCEPT</h1>
-        <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
-        <div>
-          <img
-            class="mt-20 bg-cover w-[100%] block"
-            src="src/image/loremimage/concept/emphasises the Dysphoria.png"
-            alt="" />
-        </div>
-
-        <div class=" m-2 p-10 border-l-black border-l-4 ">
-          <section class="grid md:grid-cols-2 grid-cols-1">
-            <div>
-              <ul class="flex items-center">
-                <li class="text-4xl text-red-700 p-2 flex justify-center">
-                  <i class="fa-solid fa-1"></i>
-                </li>
-                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
-                  FIND A CURATED IDENTITY
-                </li>
-              </ul>
-              <img
-                src="src/image/loremimage/concept/IMG_5899 1.webp"
-                alt="" />
-            </div>
-            <div
-              class="md:ml-10 border-red-700 border-4 p-4 flex items-center md:mt-0 mt-5">
-              <div>
-                <h1 class="md:text-4xl text-2xl font-bold">
-                  CAN I TAKE YOUR PICTURE?
-                </h1>
-                <h1 class="md:text-2xl">
-                  HOW TO MAKE A COLLECTION ABOUT INTERNET DYSPHORIA
-                </h1>
-              </div>
-            </div>
-          </section>
-          <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
-            <div>
-              <ul class="flex items-center">
-                <li class="text-4xl text-red-700 p-2 flex justify-center">
-                  <i class="fa-solid fa-2"></i>
-                </li>
-                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
-                  ORDER PHYSICAL SAMPLE DISTORT
-                </li>
-              </ul>
-            </div>
-            <div>
-              <img
-                src="src/image/loremimage/concept/page from page.webp"
-                alt="" />
-            </div>
-          </section>
-
-          <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
-            <div>
-              <ul class="flex items-center">
-                <li class="text-4xl text-red-700 p-2 flex justify-center">
-                  <i class="fa-solid fa-3"></i>
-                </li>
-                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
-                  CONSTRUCT DIGITAL TWIN
-                </li>
-              </ul>
-            </div>
-            <div>
-              <img
-                src="src/image/loremimage/concept/7DAE3680.webp"
-                alt="" />
-            </div>
-          </section>
-
-          <section
-            class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center mb-40">
-            <div>
-              <ul class="flex items-center">
-                <li class="text-4xl text-red-700 p-2 flex justify-center">
-                  <i class="fa-solid fa-4"></i>
-                </li>
-                <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
-                  ARRANGE DIGITAL PATTERNS ON LASERCUT BED SIZED PANELS
-                </li>
-              </ul>
-            </div>
-            <div>
-              <img
-                src="src/image/loremimage/concept/Your paragraph text (1).webp"
-                alt="" />
-            </div>
-          </section>
-        </div>
-        <section
-          class="grid md:grid-cols-2 grid-cols-1 items-center mb-40 -translate-y-2">
-          <div>
-            <img
-              src="src/image/loremimage/concept/MG_0107 2.webp"
-              alt="" />
-          </div>
-          <div>
-          <ul class="flex items-center">
-          <li class="text-4xl text-red-700 p-2 flex justify-center">
-            <i class="fa-solid fa-5"></i>
-            </li>
-            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
-            LASERCUT PHYSICAL PATTERNS AND CONSTRUCT
-            </li>
-           </ul>
-          </div>
-        </section>
-      </div>
-        `;
+    concepfun();
   });
 };
+let concepfun = function () {
+  page.innerHTML = `
+  <div id="bback"></div>
+  <div class="mt-10">
+    <h1 class="md:text-4xl text-2xl font-bold m-2">CONCEPT</h1>
+    <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
+    <div>
+      <img
+        class="mt-20 bg-cover w-[100%] block"
+        src="src/image/loremimage/concept/emphasises the Dysphoria.png"
+        alt="" />
+    </div>
 
+    <div class=" m-2 p-10 border-l-black border-l-4 ">
+      <section class="grid md:grid-cols-2 grid-cols-1">
+        <div>
+          <ul class="flex items-center">
+            <li class="text-4xl text-red-700 p-2 flex justify-center">
+              <i class="fa-solid fa-1"></i>
+            </li>
+            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+              FIND A CURATED IDENTITY
+            </li>
+          </ul>
+          <img
+            src="src/image/loremimage/concept/IMG_5899 1.webp"
+            alt="" />
+        </div>
+        <div
+          class="md:ml-10 border-red-700 border-4 p-4 flex items-center md:mt-0 mt-5">
+          <div>
+            <h1 class="md:text-4xl text-2xl font-bold">
+              CAN I TAKE YOUR PICTURE?
+            </h1>
+            <h1 class="md:text-2xl">
+              HOW TO MAKE A COLLECTION ABOUT INTERNET DYSPHORIA
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
+        <div>
+          <ul class="flex items-center">
+            <li class="text-4xl text-red-700 p-2 flex justify-center">
+              <i class="fa-solid fa-2"></i>
+            </li>
+            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+              ORDER PHYSICAL SAMPLE DISTORT
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="src/image/loremimage/concept/page from page.webp"
+            alt="" />
+        </div>
+      </section>
+
+      <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
+        <div>
+          <ul class="flex items-center">
+            <li class="text-4xl text-red-700 p-2 flex justify-center">
+              <i class="fa-solid fa-3"></i>
+            </li>
+            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+              CONSTRUCT DIGITAL TWIN
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="src/image/loremimage/concept/7DAE3680.webp"
+            alt="" />
+        </div>
+      </section>
+
+      <section
+        class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center mb-40">
+        <div>
+          <ul class="flex items-center">
+            <li class="text-4xl text-red-700 p-2 flex justify-center">
+              <i class="fa-solid fa-4"></i>
+            </li>
+            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+              ARRANGE DIGITAL PATTERNS ON LASERCUT BED SIZED PANELS
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="src/image/loremimage/concept/Your paragraph text (1).webp"
+            alt="" />
+        </div>
+      </section>
+    </div>
+    <section
+      class="grid md:grid-cols-2 grid-cols-1 items-center mb-40 -translate-y-2">
+      <div>
+        <img
+          src="src/image/loremimage/concept/MG_0107 2.webp"
+          alt="" />
+      </div>
+      <div>
+      <ul class="flex items-center">
+      <li class="text-4xl text-red-700 p-2 flex justify-center">
+        <i class="fa-solid fa-5"></i>
+        </li>
+        <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+        LASERCUT PHYSICAL PATTERNS AND CONSTRUCT
+        </li>
+       </ul>
+      </div>
+    </section>
+  </div>
+    `;
+};
 let ourobofun = function () {
   navfun();
   navbar.classList.add("right-52");
@@ -469,6 +473,10 @@ let glitchfun = function () {
   </section>
 </section>
   `;
+  document.getElementById("digital").addEventListener("click", function(){
+    digitalfun();
+    window.scrollTo(0, 0);
+  })
   let Glitchin = document.getElementById("Glitchin");
   let back = document.getElementById("back");
 
@@ -989,7 +997,7 @@ let stylingfun = function () {
   };
 };
 
-let innovafun = function(){
+let innovafun = function () {
   navbar.classList.remove("right-52");
   navfun();
   page.innerHTML = `
@@ -1017,7 +1025,7 @@ let innovafun = function(){
       alt="" />
   </div>
 </section>
-  `
+  `;
 
   let ino1 = document.getElementById("ino1");
 
@@ -1048,12 +1056,12 @@ let innovafun = function(){
   ino3.addEventListener("mouseout", function () {
     ino3.src = "src/image/MATERIAL INNOVATION/hair 2.png";
   });
-}
+};
 
-let gracefun = function(){
+let gracefun = function () {
   backimg.style.backgroundImage = 'url("src/image/background.png")';
   navbar.classList.add("right-52");
-  navfun()
+  navfun();
   page.innerHTML = `
   <section>
   <div>
@@ -1138,23 +1146,178 @@ let gracefun = function(){
     </h1>
   </div>
 </section>
-  `
-  var images = ["src/image/gracehome/g1.png", "src/image/gracehome/g2.png", "src/image/gracehome/g3.png"];
-  
+  `;
+  document.getElementById("digital").addEventListener("click", function(){
+    digitalfun();
+    window.scrollTo(0, 0);
+  })
+  var images = [
+    "src/image/gracehome/g1.png",
+    "src/image/gracehome/g2.png",
+    "src/image/gracehome/g3.png",
+  ];
+
   var currentIndex = 0;
 
   function changeImage() {
     var imgElement = document.getElementById("myImage");
 
     imgElement.src = images[currentIndex];
-    
-    // Increment the index or reset to 0 if it exceeds the array length
     currentIndex = (currentIndex + 1) % images.length;
   }
 
-  // Set interval to change the image every 3 seconds (3000 milliseconds)
   setInterval(changeImage, 3000);
-}
+};
+
+let digitalfun = function () {
+  navfun();
+  page.innerHTML = `
+  <section class="mt-28"> 
+  <div>
+    <div class="grid sm:grid-cols-2">
+      <div>
+        <img class="absolute h-[1000px]" src="src/image/3d/ez2.png" alt="">
+        <img class="sm:m-10 mt-10 lg:ml-32" src="src/image/3d/ez.gif" alt="">
+      </div>
+      <div class="sm:m-10 pl-5">
+        <h1 class="md:text-4xl text-2xl font-bold">CLO-3d</h1>
+        <p class="md:text-xl font-semibold">
+          As an exacting perfectionist, I have found that mastering the intricacies of
+          Clo 3D can prove to be invaluable. The software offers a revolutionary
+          solution to the traditional craft of pattern cutting by allowing patterns to
+          be scanned and resized with unparalleled precision. CLO 3D is not only an
+          eco-friendly alternative but also offers infinate design possibilities. The
+          software allows for a level of detail that echoes my time on Savile Row, where
+          every aspect of the garment was meticulously matched and perfected.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <img class="w-[30vh]" src="src/image/CROWN HEADER.png" alt="">
+    </div>
+  </div>
+  <div>
+    <div class="text-center uppercase">
+      <h1 class="lg:text-4xl text-2xl font-bold">Digital twins</h1>
+      <h2 class="font-semibold">Lorem Ipsum ss24</h2>
+    </div>
+    <div class="flex justify-center">
+      <div class="grid grid-cols-2 gap-5 w-[70%]">
+        <img class="w-[100%]" id="3d1" src="src/image/3d/screenshot_Image_2023_05_25_06_19_40 1.png" alt="">
+        <img class="w-[100%]" id="3d2" src="src/image/3d/screenshot_Image_2023_05_25_06_18_52 1.png" alt="">
+        <img class="w-[100%]" id="3d3" src="src/image/3d/screenshot_Image_2023_05_22_07_01_24 1.png" alt="">
+        <img class="w-[100%]" id="3d4" src="src/image/3d/screenshot_Image_2023_06_27_10_19_49 1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <img class="w-[30vh]" src="src/image/CROWN HEADER.png" alt="">
+  </div>
+  <div>
+    <div class="text-center uppercase">
+      <h1 class="lg:text-4xl text-2xl font-bold">Ready to wear</h1>
+      <h2 class="font-semibold">Lorem Ipsum ss24</h2>
+    </div>
+    <div class="flex justify-center">
+      <div class="grid md:grid-cols-3 gap-5 w-[70%]" id="text">
+        <img id="dress1" class="w-[100%]" src="src/image/3d/raincoatr.png" alt="">
+        <img id="dress2" class="w-[100%]" src="src/image/3d/3dturntable.png" alt="">
+        <img id="dress3" class="w-[100%]" src="src/image/3d/turntableleathertop-1.png" alt="">
+        <img class="w-[100%]" src="src/image/3d/horse dress 1.png" alt="">
+        <img class="w-[100%]" src="src/image/3d/screenshot_Image_2023_10_24_05_20_52 1.png" alt="">
+        <img class="w-[100%]" src="src/image/3d/screenshot_Image_2023_10_24_05_19_49 1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <div>
+      <img class="w-[100%]" src="src/image/3d/Group 22.gif" alt="">
+      <h1 id="step" class="cursor-pointer uppercase md:text-xl text-base font-bold rounded-full absolute right-10 sm:translate-y-[300px] translate-y-[200px] bg-[#d9d9d9]">See step by step</h1>
+      <img class="w-[100%]" src="src/image/3d/Group 1 (4).png" alt="">
+    </div>
+  </div>
+</section> 
+  `;
+
+  document.getElementById("step").addEventListener("click", function () {
+    
+
+    concepfun();
+    document.getElementById("bback").innerHTML = `
+    <h1 class="cursor-pointer absolute right-10 font-bold text-6xl"><</h1>
+    `
+    document.getElementById("bback").addEventListener("click",function(){
+      digitalfun();
+    })
+
+    window.scrollTo(0, 0);
+  });
+
+  let threeD1 = document.getElementById("3d1");
+  let threeD2 = document.getElementById("3d2");
+  let threeD3 = document.getElementById("3d3");
+  let threeD4 = document.getElementById("3d4");
+
+  let dress1 = document.getElementById("dress1");
+  let dress2 = document.getElementById("dress2");
+  let dress3 = document.getElementById("dress3");
+
+  threeD1.addEventListener("mouseover", function () {
+    threeD1.src = "src/image/3d/Group 4.png";
+  });
+
+  threeD1.addEventListener("mouseout", function () {
+    threeD1.src = "src/image/3d/screenshot_Image_2023_05_25_06_19_40 1.png";
+  });
+
+  threeD2.addEventListener("mouseover", function () {
+    threeD2.src = "src/image/3d/Group 1.png";
+  });
+
+  threeD2.addEventListener("mouseout", function () {
+    threeD2.src = "src/image/3d/screenshot_Image_2023_05_25_06_18_52 1.png";
+  });
+
+  threeD3.addEventListener("mouseover", function () {
+    threeD3.src = "src/image/3d/Group 5.png";
+  });
+
+  threeD3.addEventListener("mouseout", function () {
+    threeD3.src = "src/image/3d/screenshot_Image_2023_05_22_07_01_24 1.png";
+  });
+
+  threeD4.addEventListener("mouseover", function () {
+    threeD4.src = "src/image/3d/Group 8.png";
+  });
+
+  threeD4.addEventListener("mouseout", function () {
+    threeD4.src = "src/image/3d/screenshot_Image_2023_06_27_10_19_49 1.png";
+  });
+
+  dress1.addEventListener("mouseover", function () {
+    dress1.src = "src/image/3d/raincoatr.gif";
+  });
+
+  dress1.addEventListener("mouseout", function () {
+    dress1.src = "src/image/3d/raincoatr.png";
+  });
+
+  dress2.addEventListener("mouseover", function () {
+    dress2.src = "src/image/3d/ezgif 1.gif";
+  });
+
+  dress2.addEventListener("mouseout", function () {
+    dress2.src = "src/image/3d/3dturntable.png";
+  });
+
+  dress3.addEventListener("mouseover", function () {
+    dress3.src = "src/image/3d/ezgif 6.gif";
+  });
+
+  dress3.addEventListener("mouseout", function () {
+    dress3.src = "src/image/3d/turntableleathertop-1.png";
+  });
+};
 
 loren.addEventListener("click", function () {
   lorenfun();
@@ -1206,4 +1369,11 @@ grace.addEventListener("click", function () {
 });
 gracenav.addEventListener("click", function () {
   gracefun();
+});
+
+digital.addEventListener("click", function () {
+  digitalfun();
+});
+digitalnav.addEventListener("click", function () {
+  digitalfun();
 });
