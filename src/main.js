@@ -1230,9 +1230,9 @@ let digitalfun = function () {
     </div>
   </div>
   <div class="flex justify-center">
-    <div>
+    <div class="w-[100%]">
       <img class="w-[100%]" src="src/image/3d/Group 22.gif" alt="">
-      <h1 id="step" class="cursor-pointer uppercase md:text-xl text-base font-bold rounded-full absolute right-10 sm:translate-y-[300px] translate-y-[200px] bg-[#d9d9d9]">See step by step</h1>
+      <h1 id="step" class="cursor-pointer uppercase md:text-xl text-base font-bold rounded-full absolute right-10 sm:translate-y-[300px] translate-y-[200px] p-2 bg-[#d9d9d9]">See step by step</h1>
       <img class="w-[100%]" src="src/image/3d/Group 1 (4).png" alt="">
     </div>
   </div>

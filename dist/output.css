@@ -1102,6 +1102,14 @@ video {
     margin-top: 0.5rem;
   }
 
+  .max-md\:block {
+    display: block;
+  }
+
+  .max-md\:flex {
+    display: flex;
+  }
+
   .max-md\:w-\[20vh\] {
     width: 20vh;
   }
@@ -1112,6 +1120,10 @@ video {
 
   .max-md\:w-\[60vh\] {
     width: 60vh;
+  }
+
+  .max-md\:justify-center {
+    justify-content: center;
   }
 }
 
@@ -1232,6 +1244,10 @@ video {
 
   .md\:w-\[90vh\] {
     width: 90vh;
+  }
+
+  .md\:w-\[450px\] {
+    width: 450px;
   }
 
   .md\:-translate-y-20 {
