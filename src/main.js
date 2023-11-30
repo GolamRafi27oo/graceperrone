@@ -19,6 +19,7 @@ let grace = document.getElementById("grace");
 let gracenav = document.getElementById("gracenav");
 let digital = document.getElementById("digital");
 let digitalnav = document.getElementById("digitalnav");
+let menu = document.getElementById("menu");
 
 graceImg.addEventListener("mouseover", function () {
   backimg.style.backgroundImage = 'url("src/image/ghostlimage.png")';
@@ -35,23 +36,48 @@ function hoverOut(img) {
   img.src = "src/image/ring.png";
 }
 
+//nav drop down
 let navfun = function () {
   navbar.classList.remove("hidden");
-  let memu = document.getElementById("menu");
   let count = 0;
+
   navbar.addEventListener("click", function () {
     count++;
-    if (count % 2 != 0) {
-      memu.classList.remove("hidden");
+    if (count % 2 !== 0) {
+      menu.classList.remove("hidden");
     } else {
-      memu.classList.add("hidden");
+      menu.classList.add("hidden");
+    }
+  });
+
+  // Add event listener to the window to hide the menu when clicking outside navbar and menu
+  window.addEventListener("click", function (event) {
+    const isClickInsideNavbar = navbar.contains(event.target);
+    const isClickInsideMenu = menu.contains(event.target);
+
+    if (!isClickInsideNavbar && !isClickInsideMenu) {
+      menu.classList.add("hidden");
+      count = 0; // Reset count when hiding the menu
     }
   });
 };
 
+
+let navright = function(){
+    navbar.classList.add("right-24");
+    menu.classList.add("-translate-x-32");
+}
+
+let navrightremove = function(){
+  navbar.classList.remove("right-24");
+  menu.classList.remove("-translate-x-32");
+}
+
+
 let lorenfun = function () {
   navfun();
-  navbar.classList.remove("right-52");
+  navrightremove();
+  
   page.innerHTML = `
   <section>
   <section class="mt-40 ">
@@ -61,7 +87,7 @@ let lorenfun = function () {
         <h1 class="md:text-2xl text-xl font-bold pt-2">
           UNVEILING THE HYPERREAL SIMULACRA
         </h1>
-        <p class="smd:text-sm text-xs pt-2 font-bold">
+        <p class="sm:text-lg text-xs pt-2 font-bold">
           "LOREM IPSUM" IS CONCERNED WITH THE UNIQUE INTERACTIONS BETWEEN GEN-Z
           AND THE INTERNET, WHERE THE BOUNDARIES BETWEEN REALITY AND SIMULATION
           ARE BECOMING INCREASINGLY BLURRED. INSPIRED BY DELEUZES’ “DIFFERENCE &
@@ -74,7 +100,7 @@ let lorenfun = function () {
         <ul class="flex justify-center items-center p-2">
           <li id="concept" class=" p-2" ><img id="ring" src="src/image/ring.png" onmouseover="hover(this);" onmouseout="hoverOut(this)" alt=""></li>
           <li class=" p-2"><img src="src/image/Arrow 1.png" alt=""></li>
-          <li class=" p-2 uppercase font-semibold text-[#A49B9B]">CLICK TO SEE Concept and Process</li>
+          <li class=" p-2 uppercase font-semibold text-[#A49B9B] max-sm:text-xs">CLICK TO SEE Concept and Process</li>
         </ul>
       </div>
     </div>
@@ -84,8 +110,6 @@ let lorenfun = function () {
    <img class="bg-cover w-[100%] block" src="src/image/loremimage/back.png" alt="">
   </div>
  
-  
-  
   <!--
     <div class="grid grid-cols-2">
       <div class="grid grid-cols-1 place-items-end">
@@ -183,14 +207,14 @@ let lorenfun = function () {
 
   let concept = document.getElementById("concept");
   concept.addEventListener("click", function () {
-    navbar.classList.add("right-52");
+    navright();
     concepfun();
   });
 };
 let concepfun = function () {
   page.innerHTML = `
   <div id="bback"></div>
-  <div class="mt-10">
+  <div class="mt-5">
     <h1 class="md:text-4xl text-2xl font-bold m-2">CONCEPT</h1>
     <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
     <div>
@@ -207,7 +231,7 @@ let concepfun = function () {
             <li class="text-4xl text-red-700 p-2 flex justify-center">
               <i class="fa-solid fa-1"></i>
             </li>
-            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
               FIND A CURATED IDENTITY
             </li>
           </ul>
@@ -221,7 +245,7 @@ let concepfun = function () {
             <h1 class="md:text-4xl text-2xl font-bold">
               CAN I TAKE YOUR PICTURE?
             </h1>
-            <h1 class="md:text-2xl">
+            <h1 class="md:text-2xl text-sm ">
               HOW TO MAKE A COLLECTION ABOUT INTERNET DYSPHORIA
             </h1>
           </div>
@@ -233,7 +257,7 @@ let concepfun = function () {
             <li class="text-4xl text-red-700 p-2 flex justify-center">
               <i class="fa-solid fa-2"></i>
             </li>
-            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
               ORDER PHYSICAL SAMPLE DISTORT
             </li>
           </ul>
@@ -251,7 +275,7 @@ let concepfun = function () {
             <li class="text-4xl text-red-700 p-2 flex justify-center">
               <i class="fa-solid fa-3"></i>
             </li>
-            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
               CONSTRUCT DIGITAL TWIN
             </li>
           </ul>
@@ -270,7 +294,7 @@ let concepfun = function () {
             <li class="text-4xl text-red-700 p-2 flex justify-center">
               <i class="fa-solid fa-4"></i>
             </li>
-            <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
               ARRANGE DIGITAL PATTERNS ON LASERCUT BED SIZED PANELS
             </li>
           </ul>
@@ -294,18 +318,31 @@ let concepfun = function () {
       <li class="text-4xl text-red-700 p-2 flex justify-center">
         <i class="fa-solid fa-5"></i>
         </li>
-        <li class="md:text-2xl font-bold -translate-x-2 -translate-y-2">
+        <li class="md:text-2xl font-bold -translate-x-2 sm:-translate-y-2">
         LASERCUT PHYSICAL PATTERNS AND CONSTRUCT
         </li>
        </ul>
       </div>
     </section>
+    <div
+    class="mt-20 flex justify-center uppercase md:text-xl font-bold md:translate-y-20">
+    <h1
+      id="digital"
+      class="bg-black text-white p-2 rounded-full cursor-pointer">
+      see digital fasion
+    </h1>
   </div>
+  </div>
+
     `;
+    document.getElementById("digital").addEventListener("click", function(){
+      digitalfun();
+      window.scrollTo(0, 0);
+    })
 };
 let ourobofun = function () {
   navfun();
-  navbar.classList.add("sm:right-52");
+  navright();
   page.innerHTML = `
   <div>
   <section class="grid md:grid-cols-2 items-center font-semibold">
@@ -315,7 +352,7 @@ let ourobofun = function () {
         src="src/image/OUROBOROS/oroboruslook1 1.png"
         alt="" />
     </div>
-    <div>
+    <div class="sm:text-4xl md:text-2xl text-base">
       <div class="text-left">
         <ul class="list-disc ml-10">
           <li>Coral Bleaching</li>
@@ -357,7 +394,7 @@ let ourobofun = function () {
           class="mb-1"
           src="src/image/OUROBOROS/IMG_1483 1.png"
           alt="" />
-        <p>
+        <p class="max-sm:text-xs">
           Zooxanthellae is the microscopic algae which pigments coral, the
           two organisms are reliant on each other for survival. because
           the algae does not have the capacity to handle large
@@ -377,14 +414,14 @@ let ourobofun = function () {
 
 let lillustrafun = function () {
   navfun();
-  navbar.classList.remove("right-52");
+  navrightremove();
   page.innerHTML = `
   <section class="m-2">
   <div class="flex justify-center items-center">
     <div class="text-center">
       <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
       <div class="shadow-white shadow-2xl shadow- rounded-[50%]">
-        <img class="mt-10 max-xl:w-[60vh]" src="src/image/ILLUSTRATION/doll.png" alt="" />
+        <img class="mt-10 max-xl:w-[60vh] max-md:w-[40vh]" src="src/image/ILLUSTRATION/doll.png" alt="" />
       </div>
     </div>
   </div>
@@ -392,10 +429,10 @@ let lillustrafun = function () {
     <img class="max-lg:hidden" src="src/image/ILLUSTRATION/leg.png" alt="" />
   </div>
   <div class="lg:-translate-y-[500px] md:w-[90vh] lg:ml-[10%] max-lg:mt-10">
-    <h1 class="lg:text-6xl md:text-4xl text-2xl text-[#766FB2] font-bold">
+    <h1 class="lg:text-6xl md:text-4xl sm:text-2xl text-base text-[#766FB2] font-bold">
       POST-HUMAN WORLD BUILDING
     </h1>
-    <p class="md:text-lg text-base font-bold">
+    <p class="md:text-lg sm:text-base text-sm font-bold">
        My work is born out of an imagined Post-Human world which considers the
       clashes, tensions, and consequences, of living in an age where the
       distinction between the real and the digital, the original and its
@@ -420,12 +457,14 @@ let lillustrafun = function () {
 
 let glitchfun = function () {
   navfun();
-  navbar.classList.remove("right-52");
+  navrightremove();
   page.innerHTML = `
   <section>
-  <div class="flex justify-center font-bold md:text-4xl text-2xl mt-16">
-    <h1 class="flex text-center justify-center">Glitch work</h1>
-    <h1 id="back" class="absolute text-6xl right-10 cursor-pointer"><</h1>
+
+  <div class="flex justify-center font-bold md:text-4xl text-2xl">
+    <h1 class="flex text-center justify-center mt-10">Glitch work</h1>
+    <h1 id="back" class="absolute text-6xl mt-5 right-10 cursor-pointer"><</h1>
+
   </div>
   <section id="Glitchin">
     <div class="mt-20 flex justify-center w-[100%]">
@@ -482,7 +521,7 @@ let glitchfun = function () {
 
   document.getElementById("g1").addEventListener("click", function () {
     back.classList.add("left-10");
-    navbar.classList.add("right-52");
+    navright();
 
     Glitchin.innerHTML = `
     <section id="Glitch">
@@ -491,11 +530,13 @@ let glitchfun = function () {
       </div>
     </section>
     `;
+    window.scrollTo(0, 0);
+
   });
 
   document.getElementById("g2").addEventListener("click", function () {
     back.classList.add("left-10");
-    navbar.classList.add("right-52");
+    navright();
 
     Glitchin.innerHTML = `
     <section id="Glitch">
@@ -504,11 +545,13 @@ let glitchfun = function () {
       </div>
     </section>
     `;
+    window.scrollTo(0, 0);
+
   });
 
   document.getElementById("g3").addEventListener("click", function () {
     back.classList.add("left-10");
-    navbar.classList.add("right-52");
+    navright();
 
     Glitchin.innerHTML = `
     <section id="Glitch">
@@ -517,11 +560,13 @@ let glitchfun = function () {
       </div>
     </section>
     `;
+    window.scrollTo(0, 0);
+
   });
 
   document.getElementById("g4").addEventListener("click", function () {
     back.classList.add("left-10");
-    navbar.classList.add("right-52");
+    navright();
 
     Glitchin.innerHTML = `
     <section id="Glitch">
@@ -530,11 +575,13 @@ let glitchfun = function () {
       </div>
     </section>
     `;
+    window.scrollTo(0, 0);
+
   });
 
   document.getElementById("g5").addEventListener("click", function () {
     back.classList.add("left-10");
-    navbar.classList.add("right-52");
+    navright();
 
     Glitchin.innerHTML = `
     <section id="Glitch">
@@ -543,11 +590,13 @@ let glitchfun = function () {
       </div>
     </section>
     `;
+    window.scrollTo(0, 0);
+
   });
 
   document.getElementById("g6").addEventListener("click", function () {
     back.classList.add("left-10");
-    navbar.classList.add("right-52");
+    navright();
 
     Glitchin.innerHTML = `
     <section id="Glitch">
@@ -569,10 +618,12 @@ let glitchfun = function () {
     </div>
   </section>
     `;
+    window.scrollTo(0, 0);
+
   });
 
   back.addEventListener("click", function () {
-    navbar.classList.remove("right-52");
+    navrightremove();
     glitchfun();
   });
 };
@@ -710,7 +761,7 @@ let stylingfun = function () {
 
   styimg.addEventListener("click", function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
     <section>
     <div id="back" class="text-6xl p-4 cursor-pointer">
@@ -738,7 +789,7 @@ let stylingfun = function () {
 
   let xx1 = function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
       <section class="m-10">
         <div id="back" class="text-6xl p-4 cursor-pointer">
@@ -779,7 +830,7 @@ let stylingfun = function () {
 
   document.getElementById("x2").addEventListener("click", function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
   
     <section class="m-10"> 
@@ -800,7 +851,7 @@ let stylingfun = function () {
 
   let xx3 = function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
 
     <section class="m-10"> 
@@ -842,7 +893,7 @@ let stylingfun = function () {
 
   document.getElementById("x4").addEventListener("click", function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
   
     <section class="m-10"> 
@@ -863,7 +914,7 @@ let stylingfun = function () {
 
   document.getElementById("x5").addEventListener("click", function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
   
     <section class="m-10"> 
@@ -895,7 +946,7 @@ let stylingfun = function () {
 
   document.getElementById("x8").addEventListener("click", function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
     <section>
     <div id="back" class="text-6xl p-4 cursor-pointer">
@@ -923,7 +974,7 @@ let stylingfun = function () {
 
   let xx10 = function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
     <section class="m-10"> 
     <div id="back" class="text-6xl p-4 cursor-pointer">
@@ -972,7 +1023,7 @@ let stylingfun = function () {
 
   document.getElementById("x13").addEventListener("click", function () {
     window.scrollTo(0, 0);
-    navbar.classList.add("right-52");
+    navright();
     page.innerHTML = `
     <section class="m-10"> 
     <div id="back" class="text-6xl p-4 cursor-pointer">
@@ -991,14 +1042,14 @@ let stylingfun = function () {
   });
 
   let backbutton = function () {
-    navbar.classList.remove("right-52");
+    navright();
     stylingfun();
     window.scrollTo(0, 0);
   };
 };
 
 let innovafun = function () {
-  navbar.classList.remove("right-52");
+  navrightremove();
   navfun();
   page.innerHTML = `
   <section>
@@ -1060,7 +1111,7 @@ let innovafun = function () {
 
 let gracefun = function () {
   backimg.style.backgroundImage = 'url("src/image/background.png")';
-  navbar.classList.add("sm:right-52");
+  navrightremove();
   navfun();
   page.innerHTML = `
   <section>
@@ -1240,12 +1291,12 @@ let digitalfun = function () {
   `;
 
   document.getElementById("step").addEventListener("click", function () {
-    
-
     concepfun();
     document.getElementById("bback").innerHTML = `
     <h1 class="cursor-pointer absolute right-10 font-bold text-6xl"><</h1>
     `
+
+    navbar.classList.add("hidden");
     document.getElementById("bback").addEventListener("click",function(){
       digitalfun();
     })
