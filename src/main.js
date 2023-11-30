@@ -62,22 +62,20 @@ let navfun = function () {
   });
 };
 
+let navright = function () {
+  navbar.classList.add("right-24");
+  menu.classList.add("-translate-x-32");
+};
 
-let navright = function(){
-    navbar.classList.add("right-24");
-    menu.classList.add("-translate-x-32");
-}
-
-let navrightremove = function(){
+let navrightremove = function () {
   navbar.classList.remove("right-24");
   menu.classList.remove("-translate-x-32");
-}
-
+};
 
 let lorenfun = function () {
   navfun();
   navrightremove();
-  
+
   page.innerHTML = `
   <section>
   <section class="mt-40 ">
@@ -335,10 +333,10 @@ let concepfun = function () {
   </div>
 
     `;
-    document.getElementById("digital").addEventListener("click", function(){
-      digitalfun();
-      window.scrollTo(0, 0);
-    })
+  document.getElementById("digital").addEventListener("click", function () {
+    digitalfun();
+    window.scrollTo(0, 0);
+  });
 };
 let ourobofun = function () {
   navfun();
@@ -512,10 +510,10 @@ let glitchfun = function () {
   </section>
 </section>
   `;
-  document.getElementById("digital").addEventListener("click", function(){
+  document.getElementById("digital").addEventListener("click", function () {
     digitalfun();
     window.scrollTo(0, 0);
-  })
+  });
   let Glitchin = document.getElementById("Glitchin");
   let back = document.getElementById("back");
 
@@ -531,7 +529,6 @@ let glitchfun = function () {
     </section>
     `;
     window.scrollTo(0, 0);
-
   });
 
   document.getElementById("g2").addEventListener("click", function () {
@@ -546,7 +543,6 @@ let glitchfun = function () {
     </section>
     `;
     window.scrollTo(0, 0);
-
   });
 
   document.getElementById("g3").addEventListener("click", function () {
@@ -561,7 +557,6 @@ let glitchfun = function () {
     </section>
     `;
     window.scrollTo(0, 0);
-
   });
 
   document.getElementById("g4").addEventListener("click", function () {
@@ -576,7 +571,6 @@ let glitchfun = function () {
     </section>
     `;
     window.scrollTo(0, 0);
-
   });
 
   document.getElementById("g5").addEventListener("click", function () {
@@ -591,7 +585,6 @@ let glitchfun = function () {
     </section>
     `;
     window.scrollTo(0, 0);
-
   });
 
   document.getElementById("g6").addEventListener("click", function () {
@@ -619,7 +612,6 @@ let glitchfun = function () {
   </section>
     `;
     window.scrollTo(0, 0);
-
   });
 
   back.addEventListener("click", function () {
@@ -1198,10 +1190,10 @@ let gracefun = function () {
   </div>
 </section>
   `;
-  document.getElementById("digital").addEventListener("click", function(){
+  document.getElementById("digital").addEventListener("click", function () {
     digitalfun();
     window.scrollTo(0, 0);
-  })
+  });
   var images = [
     "src/image/gracehome/g1.png",
     "src/image/gracehome/g2.png",
@@ -1294,12 +1286,12 @@ let digitalfun = function () {
     concepfun();
     document.getElementById("bback").innerHTML = `
     <h1 class="cursor-pointer absolute right-10 font-bold text-6xl"><</h1>
-    `
+    `;
 
     navbar.classList.add("hidden");
-    document.getElementById("bback").addEventListener("click",function(){
+    document.getElementById("bback").addEventListener("click", function () {
       digitalfun();
-    })
+    });
 
     window.scrollTo(0, 0);
   });
@@ -1428,3 +1420,11 @@ digital.addEventListener("click", function () {
 digitalnav.addEventListener("click", function () {
   digitalfun();
 });
+
+
+/*
+# graceperrone
+# Developed by Golam Rafi
+# [Portfolio](https://golamrafi27oo.github.io/aboutgolam/)
+# [Linkedin](https://www.linkedin.com/in/golamrafi/)
+*/
