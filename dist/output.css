@@ -554,24 +554,12 @@ video {
   right: 2.5rem;
 }
 
-.right-20 {
-  right: 5rem;
-}
-
 .right-24 {
   right: 6rem;
 }
 
 .top-2 {
   top: 0.5rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-10 {
-  top: 2.5rem;
 }
 
 .z-10 {
@@ -620,10 +608,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-20 {
@@ -750,6 +734,10 @@ video {
 
 .translate-y-\[25px\] {
   --tw-translate-y: 25px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1110,12 +1098,12 @@ video {
     width: 30vh;
   }
 
-  .max-md\:w-\[60vh\] {
-    width: 60vh;
-  }
-
   .max-md\:w-\[40vh\] {
     width: 40vh;
+  }
+
+  .max-md\:w-\[60vh\] {
+    width: 60vh;
   }
 
   .max-md\:justify-center {
@@ -1124,11 +1112,6 @@ video {
 }
 
 @media not all and (min-width: 640px) {
-  .max-sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .max-sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -1191,14 +1174,9 @@ video {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-4xl {
@@ -1206,14 +1184,14 @@ video {
     line-height: 2.5rem;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1240,10 +1218,6 @@ video {
 
   .md\:mt-\[500px\] {
     margin-top: 500px;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
   }
 
   .md\:h-\[90vh\] {

@@ -73,6 +73,7 @@ let navrightremove = function () {
 };
 
 let lorenfun = function () {
+  window.scrollTo(0, 0);
   navfun();
   navrightremove();
 
@@ -96,7 +97,7 @@ let lorenfun = function () {
       </div>
       <div>
         <ul class="flex justify-center items-center p-2">
-          <li id="concept" class=" p-2" ><img id="ring" src="src/image/ring.png" onmouseover="hover(this);" onmouseout="hoverOut(this)" alt=""></li>
+          <li id="concept" class=" p-2" ><img id="ring" class="cursor-pointer" src="src/image/ring.png" onmouseover="hover(this);" onmouseout="hoverOut(this)" alt=""></li>
           <li class=" p-2"><img src="src/image/Arrow 1.png" alt=""></li>
           <li class=" p-2 uppercase font-semibold text-[#A49B9B] max-sm:text-xs">CLICK TO SEE Concept and Process</li>
         </ul>
@@ -210,6 +211,7 @@ let lorenfun = function () {
   });
 };
 let concepfun = function () {
+  window.scrollTo(0, 0);
   page.innerHTML = `
   <div id="bback"></div>
   <div class="mt-5">
@@ -339,6 +341,7 @@ let concepfun = function () {
   });
 };
 let ourobofun = function () {
+  window.scrollTo(0, 0);
   navfun();
   navright();
   page.innerHTML = `
@@ -411,6 +414,7 @@ let ourobofun = function () {
 };
 
 let lillustrafun = function () {
+  window.scrollTo(0, 0);
   navfun();
   navrightremove();
   page.innerHTML = `
@@ -454,6 +458,7 @@ let lillustrafun = function () {
 };
 
 let glitchfun = function () {
+  window.scrollTo(0, 0);
   navfun();
   navrightremove();
   page.innerHTML = `
@@ -621,6 +626,7 @@ let glitchfun = function () {
 };
 
 let stylingfun = function () {
+  window.scrollTo(0, 0);
   navfun();
   page.innerHTML = `
   <section>
@@ -628,7 +634,7 @@ let stylingfun = function () {
     <div class="ml-10">
       <img
         id="styimg"
-        class="bg-cover w-[100%] block"
+        class="bg-cover w-[100%] block cursor-pointer"
         src="src/image/styling/Group 22.png"
         alt="" />
     </div>
@@ -641,7 +647,7 @@ let stylingfun = function () {
         <h1>Gallery</h1>
       </div>
     </div>
-    <div class="p-10 flex justify-center w-[100%]">
+    <div class="p-10 flex justify-center w-[100%] cursor-pointer">
       <div class="grid gap-2 grid-cols-3 mt-10">
         <img
           id="x1"
@@ -1102,6 +1108,7 @@ let innovafun = function () {
 };
 
 let gracefun = function () {
+  window.scrollTo(0, 0);
   backimg.style.backgroundImage = 'url("src/image/background.png")';
   navrightremove();
   navfun();
@@ -1421,6 +1428,43 @@ digitalnav.addEventListener("click", function () {
   digitalfun();
 });
 
+
+
+//cursor star
+
+document.addEventListener("DOMContentLoaded", function () {
+  const starsContainer = document.getElementById("stars");
+
+  document.addEventListener("mousemove", function (e) {
+    createStar(e);
+  });
+
+  function createStar(e) {
+    const star = document.createElement("div");
+    star.className = "star";
+    starsContainer.appendChild(star);
+
+    const xPos = e.clientX + window.scrollX - star.clientWidth / 2;
+    const yPos = e.clientY + window.scrollY - star.clientHeight / 2;
+
+    star.style.left = `${xPos}px`;
+    star.style.top = `${yPos}px`;
+
+ 
+    setTimeout(() => {
+      star.style.opacity = "1";
+      star.style.transform = " scale(-1)";
+    }, 0);
+
+    setTimeout(() => {
+      star.style.opacity = "0.5";
+    }, 300);
+
+    setTimeout(() => {
+      star.remove();
+    }, 100);
+  }
+});
 
 /*
 # graceperrone
