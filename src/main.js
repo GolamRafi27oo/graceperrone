@@ -73,13 +73,15 @@ let navrightremove = function () {
 };
 
 let lorenfun = function () {
+  window.location.hash = "#LOREM_IPSUM";
   window.scrollTo(0, 0);
   navfun();
   navrightremove();
 
   page.innerHTML = `
   <section>
-  <section class="mt-40 ">
+  <section class="mt-40">
+
     <div class="grid md:grid-cols-2 items-center m-2">
       <div>
         <h1 class="md:text-4xl text-2xl font-bold">LOREM IPSUM:</h1>
@@ -211,6 +213,8 @@ let lorenfun = function () {
   });
 };
 let concepfun = function () {
+  window.location.hash = "#CONCEPT";
+
   window.scrollTo(0, 0);
   page.innerHTML = `
   <div id="bback"></div>
@@ -341,6 +345,7 @@ let concepfun = function () {
   });
 };
 let ourobofun = function () {
+  window.location.hash = "#OROBORUS_SS23";
   window.scrollTo(0, 0);
   navfun();
   navright();
@@ -414,6 +419,7 @@ let ourobofun = function () {
 };
 
 let lillustrafun = function () {
+  window.location.hash = "#ILLUSTRATION";
   window.scrollTo(0, 0);
   navfun();
   navrightremove();
@@ -458,6 +464,7 @@ let lillustrafun = function () {
 };
 
 let glitchfun = function () {
+  window.location.hash = "#GLITCH_WORK";
   window.scrollTo(0, 0);
   navfun();
   navrightremove();
@@ -626,10 +633,13 @@ let glitchfun = function () {
 };
 
 let stylingfun = function () {
+
+ window.location.hash = "#STYLING";
   window.scrollTo(0, 0);
   navfun();
   page.innerHTML = `
   <section>
+  <a href="#home_video" rel="facebox"></a>
   <div class="justify-center font-bold">
     <div class="ml-10">
       <img
@@ -864,8 +874,7 @@ let stylingfun = function () {
         <h1 class="w-72">Kavari for Ethel Cain’s freezer bride tour</h1>
         <p class="text-left font-medium md:text-xl text-lg  md:mt-[300px]">This was a moment I was incredibly proud of; I made this piece for  
           <a class="underline underline-offset-1" href="https://www.instagram.com/kavari_____/" target="_blank">@kavari_____</a> when she supported 
-          <a class="underline underline-offset-1" href="https://www.instagram.com/mothercain/"@mothercain</a>
-          this December. Pics by
+          <a class="underline underline-offset-1" href="https://www.instagram.com/mothercain/" target="_blank>@mothercain</a> this December. Pics by
           <a class="underline underline-offset-1" href="https://www.instagram.com/spit.ting/" target="_blank">@spit.ting</a>
         </p>
       </div>
@@ -929,7 +938,7 @@ let stylingfun = function () {
         <h1>Dress by me </h1>
         <p class="text-left font-medium md:text-xl text-lg  md:mt-[300px]">This was a moment I was incredibly proud of; I made this piece for  
           <a class="underline underline-offset-1" href="https://www.instagram.com/kavari_____/" target="_blank">Photographer 
-          <a class="underline underline-offset-1" href="https://www.instagram.com/alexbenecki/ target="_blank">@alexbenecki</a>
+          <a class="underline underline-offset-1" href="https://www.instagram.com/alexbenecki/" target="_blank">@alexbenecki</a>
         </p>
       </div>
     </div>
@@ -1047,6 +1056,7 @@ let stylingfun = function () {
 };
 
 let innovafun = function () {
+  window.location.hash = "#INNOVATION";
   navrightremove();
   navfun();
   page.innerHTML = `
@@ -1108,6 +1118,7 @@ let innovafun = function () {
 };
 
 let gracefun = function () {
+  window.location.hash = "#GRACE_ABOUT";
   window.scrollTo(0, 0);
   backimg.style.backgroundImage = 'url("src/image/background.png")';
   navrightremove();
@@ -1220,6 +1231,7 @@ let gracefun = function () {
 };
 
 let digitalfun = function () {
+  window.location.hash = "#DIGITAL_FASION";
   navfun();
   page.innerHTML = `
   <section class="mt-28"> 
