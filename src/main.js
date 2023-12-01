@@ -1428,8 +1428,6 @@ digitalnav.addEventListener("click", function () {
   digitalfun();
 });
 
-
-
 //cursor star
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -1450,7 +1448,6 @@ document.addEventListener("DOMContentLoaded", function () {
     star.style.left = `${xPos}px`;
     star.style.top = `${yPos}px`;
 
- 
     setTimeout(() => {
       star.style.opacity = "1";
       star.style.transform = " scale(-1)";
