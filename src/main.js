@@ -23,6 +23,7 @@ let menu = document.getElementById("menu");
 
 graceImg.addEventListener("mouseover", function () {
   backimg.style.backgroundImage = 'url("src/image/ghostlimage.png")';
+
 });
 graceImg.addEventListener("mouseout", function () {
   backimg.style.backgroundImage = 'url("src/image/background.png")';
@@ -219,8 +220,7 @@ let concepfun = function () {
   page.innerHTML = `
   <div id="bback"></div>
   <div class="mt-5">
-    <h1 class="md:text-4xl text-2xl font-bold m-2">CONCEPT</h1>
-    <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
+    <h1 class="md:text-4xl text-2xl font-bold pl-5">CONCEPT</h1>
     <div>
       <img
         class="p-5 bg-cover w-[100%] block"
@@ -319,7 +319,7 @@ let lillustrafun = function () {
   <div class="flex justify-center items-center">
     <div class="text-center">
       <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
-      <div class="shadow-white shadow-2xl shadow- rounded-[50%]">
+      <div class="rounded-[50%]">
         <img class="mt-10 max-xl:w-[60vh] max-md:w-[40vh] w-[80vh]" src="src/image/ILLUSTRATION/doll.png" alt="" />
       </div>
     </div>
