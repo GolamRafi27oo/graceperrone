@@ -223,119 +223,10 @@ let concepfun = function () {
     <h1 class="md:text-2xl font-bold pt-2 m-2">LOREM IPSUM:</h1>
     <div>
       <img
-        class="mt-20 bg-cover w-[100%] block"
+        class="p-5 bg-cover w-[100%] block"
         src="src/image/loremimage/concept/emphasises the Dysphoria.png"
         alt="" />
     </div>
-
-    <div class=" m-2 p-10 border-l-black border-l-4 ">
-      <section class="grid md:grid-cols-2 grid-cols-1">
-        <div>
-          <ul class="flex items-center">
-            <li class="text-4xl text-red-700 p-2 flex justify-center">
-              <i class="fa-solid fa-1"></i>
-            </li>
-            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
-              FIND A CURATED IDENTITY
-            </li>
-          </ul>
-          <img
-            src="src/image/loremimage/concept/IMG_5899 1.webp"
-            alt="" />
-        </div>
-        <div
-          class="md:ml-10 border-red-700 border-4 p-4 flex items-center md:mt-0 mt-5">
-          <div>
-            <h1 class="md:text-4xl text-2xl font-bold">
-              CAN I TAKE YOUR PICTURE?
-            </h1>
-            <h1 class="md:text-2xl text-sm ">
-              HOW TO MAKE A COLLECTION ABOUT INTERNET DYSPHORIA
-            </h1>
-          </div>
-        </div>
-      </section>
-      <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
-        <div>
-          <ul class="flex items-center">
-            <li class="text-4xl text-red-700 p-2 flex justify-center">
-              <i class="fa-solid fa-2"></i>
-            </li>
-            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
-              ORDER PHYSICAL SAMPLE DISTORT
-            </li>
-          </ul>
-        </div>
-        <div>
-          <img
-            src="src/image/loremimage/concept/page from page.webp"
-            alt="" />
-        </div>
-      </section>
-
-      <section class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center">
-        <div>
-          <ul class="flex items-center">
-            <li class="text-4xl text-red-700 p-2 flex justify-center">
-              <i class="fa-solid fa-3"></i>
-            </li>
-            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
-              CONSTRUCT DIGITAL TWIN
-            </li>
-          </ul>
-        </div>
-        <div>
-          <img
-            src="src/image/loremimage/concept/7DAE3680.webp"
-            alt="" />
-        </div>
-      </section>
-
-      <section
-        class="grid md:grid-cols-2 grid-cols-1 mt-40 items-center mb-40">
-        <div>
-          <ul class="flex items-center">
-            <li class="text-4xl text-red-700 p-2 flex justify-center">
-              <i class="fa-solid fa-4"></i>
-            </li>
-            <li class="md:text-2xl text-sm  font-bold -translate-x-2 -translate-y-2">
-              ARRANGE DIGITAL PATTERNS ON LASERCUT BED SIZED PANELS
-            </li>
-          </ul>
-        </div>
-        <div>
-          <img
-            src="src/image/loremimage/concept/Your paragraph text (1).webp"
-            alt="" />
-        </div>
-      </section>
-    </div>
-    <section
-      class="grid md:grid-cols-2 grid-cols-1 items-center mb-40 -translate-y-2">
-      <div>
-        <img
-          src="src/image/loremimage/concept/MG_0107 2.webp"
-          alt="" />
-      </div>
-      <div>
-      <ul class="flex items-center">
-      <li class="text-4xl text-red-700 p-2 flex justify-center">
-        <i class="fa-solid fa-5"></i>
-        </li>
-        <li class="md:text-2xl font-bold -translate-x-2 sm:-translate-y-2">
-        LASERCUT PHYSICAL PATTERNS AND CONSTRUCT
-        </li>
-       </ul>
-      </div>
-    </section>
-    <div
-    class="mt-20 flex justify-center uppercase md:text-xl font-bold md:translate-y-20">
-    <h1
-      id="digital"
-      class="bg-black text-white p-2 rounded-full cursor-pointer">
-      see digital fasion
-    </h1>
-  </div>
   </div>
 
     `;
@@ -429,13 +320,17 @@ let lillustrafun = function () {
     <div class="text-center">
       <h1 class="md:text-4xl text-2xl font-bold">ILLUSTRATION</h1>
       <div class="shadow-white shadow-2xl shadow- rounded-[50%]">
-        <img class="mt-10 max-xl:w-[60vh] max-md:w-[40vh]" src="src/image/ILLUSTRATION/doll.png" alt="" />
+        <img class="mt-10 max-xl:w-[60vh] max-md:w-[40vh] w-[80vh]" src="src/image/ILLUSTRATION/doll.png" alt="" />
       </div>
     </div>
+  </div>
+  <div>
+    <img class="mt-40 bg-cover xl:w-[70%] w-[100%] block" src="src/image/ILLUSTRATION/grap.png" alt="" />
   </div>
   <div class="flex justify-end md:mr-[10%]">
     <img class="max-lg:hidden" src="src/image/ILLUSTRATION/leg.png" alt="" />
   </div>
+
   <div class="lg:-translate-y-[500px] md:w-[90vh] lg:ml-[10%] max-lg:mt-10">
     <h1 class="lg:text-6xl md:text-4xl sm:text-2xl text-base text-[#766FB2] font-bold">
       POST-HUMAN WORLD BUILDING
@@ -457,7 +352,6 @@ let lillustrafun = function () {
     <div class="flex justify-center">
       <img class="mt-40 " src="src/image/ILLUSTRATION/glry.png" alt="" />
     </div>
-    <img class="mt-40 bg-cover w-[100%] block" src="src/image/ILLUSTRATION/grap.png" alt="" />
   </div>
 </section>
   `;
@@ -633,8 +527,7 @@ let glitchfun = function () {
 };
 
 let stylingfun = function () {
-
- window.location.hash = "#STYLING";
+  window.location.hash = "#STYLING";
   window.scrollTo(0, 0);
   navfun();
   page.innerHTML = `
@@ -1079,7 +972,7 @@ let innovafun = function () {
   </div>
   <div class="mt-10 justify-center flex">
     <img
-      class="max-md:w-[30vh]"
+      class="w-[100%]"
       src="src/image/MATERIAL INNOVATION/treyfullbusiness 1.png"
       alt="" />
   </div>
@@ -1263,15 +1156,15 @@ let digitalfun = function () {
       <h1 class="lg:text-4xl text-2xl font-bold">Digital twins</h1>
       <h2 class="font-semibold">Lorem Ipsum ss24</h2>
     </div>
-    <div class="flex justify-center">
-      <div class="grid grid-cols-2 gap-5 w-[70%]">
-        <img class="w-[100%]" id="3d1" src="src/image/3d/screenshot_Image_2023_05_25_06_19_40 1.png" alt="">
-        <img class="w-[100%]" id="3d2" src="src/image/3d/screenshot_Image_2023_05_25_06_18_52 1.png" alt="">
-        <img class="w-[100%]" id="3d3" src="src/image/3d/screenshot_Image_2023_05_22_07_01_24 1.png" alt="">
-        <img class="w-[100%]" id="3d4" src="src/image/3d/screenshot_Image_2023_06_27_10_19_49 1.png" alt="">
-      </div>
-    </div>
   </div>
+  <div class="flex justify-center w-[100%]">
+  <div class="grid grid-cols-2 gap-5">
+    <img id="3d1" src="src/image/3d/screenshot_Image_2023_05_25_06_19_40 1.png" alt="">
+    <img id="3d2" src="src/image/3d/screenshot_Image_2023_05_25_06_18_52 1.png" alt="">
+    <img id="3d3" src="src/image/3d/screenshot_Image_2023_05_22_07_01_24 1.png" alt="">
+    <img id="3d4" src="src/image/3d/screenshot_Image_2023_06_27_10_19_49 1.png" alt="">
+  </div>
+</div>
   <div class="flex justify-center">
     <img class="w-[30vh]" src="src/image/CROWN HEADER.png" alt="">
   </div>

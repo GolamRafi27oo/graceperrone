@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="src/image/TAB LOGO.png" type="image/png">
+    <link rel="icon" href="src/image/TAB LOGO.png" type="image/png" />
     <link href="dist/output.css" rel="stylesheet" />
     <title>Grace Perrone</title>
   </head>
@@ -23,6 +23,7 @@
       top: 0;
       left: 0;
       pointer-events: none;
+      z-index: 11;
     }
     .star {
       position: absolute;
@@ -32,6 +33,7 @@
       background-size: cover;
       opacity: 0;
       transition: transform 5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      z-index: 11;
     }
   </style>
 
@@ -59,11 +61,6 @@
             <li class="hover:border-black border-2 border-dashed">
               <a href="index.html">HOME</a>
             </li>
-            <li
-              id="digitalnav"
-              class="hover:border-black border-2 border-dashed">
-              <a href="#">DIGITAL FASHON</a>
-            </li>
             <li id="lorennav" class="hover:border-black border-2 border-dashed">
               <a href="#">LOREM IPSUM SS24</a>
             </li>
@@ -71,6 +68,11 @@
               id="OROBORUSNAV"
               class="hover:border-black border-2 border-dashed">
               <a href="#">OROBORUS SS23</a>
+            </li>
+            <li
+              id="digitalnav"
+              class="hover:border-black border-2 border-dashed">
+              <a href="#">DIGITAL FASHON</a>
             </li>
             <li
               id="glitchnav"
@@ -111,7 +113,7 @@
             class="text-center max-md:mt-2 mb-4 font-primary md:text-2xl sm:text-lg text-xs">
             <div
               id="graceImg"
-              class="flex justify-center translate-y-[25px] md:translate-y-[65px] sm:translate-y-[30px]">
+              class="flex justify-center translate-y-[52px] md:translate-y-[130px] sm:translate-y-[60px]">
               <h1
                 id="grace"
                 class="cursor-pointer hover:border-black border-2 border-dashed w-[25vh] absolute z-10">
@@ -121,7 +123,7 @@
           </div>
           <div class="flex justify-center">
             <img
-              class="md:w-[236px] w-[100px] md:mt-32 sm:mt-16 mt-10"
+              class="md:w-[236px] w-[100px] md:mt-32 sm:mt-16 mt-14"
               src="src/image/homegif.gif"
               alt="" />
           </div>
